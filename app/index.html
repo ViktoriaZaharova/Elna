@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Elina Mebel - Производство корпусной мебели</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
+        integrity="sha512-6qkvBbDyl5TDJtNJiC8foyEVuB6gxMBkrKy67XpqnIDxyvLLPJzmTjAj1dRJfNdmXWqD10VbJoeN4pOQqDwvRA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+
+<div class="wrapper">
+
+  <div class="fixed-navigation">
+
+  </div>
+
+  <!--### HEADER ###-->
+  <header>
+    <div class="header-top">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="#" class="location-item">
+              <span class="location-item__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#location"></use></svg></span>
+              <span class="location-item__text">Город</span>
+            </a>
+
+            <ul class="menu my-ul">
+              <li class="dropdown dropdown-location">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Санкт-Петербург</a>
+
+                <div class="dropdown-menu">
+                  <form method="post" class="form-search">
+                    <label><input type="text" placeholder="Нижний" name="name"></label>
+                    <button type="submit">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#search"></use>
+                      </svg>
+                    </button>
+                  </form>
+
+                  <div class="mCustomScrollbar-wrap">
+                    <a href="#" class="city">Нижний Новгород</a>
+                    <a href="#" class="city">Нижний Тагил</a>
+                    <a href="#" class="city">Нижний Тура</a>
+                    <a href="#" class="city">Нижний Салда</a>
+                    <a href="#" class="city">Нижний Пышма</a>
+                    <a href="#" class="city">Нижний Крынка</a>
+                    <a href="#" class="city">Нижний Новгород</a>
+                    <a href="#" class="city">Нижний Новгород</a>
+                    <a href="#" class="city">Нижний Новгород</a>
+                    <a href="#" class="city">Нижний Новгород</a>
+                    <a href="#" class="city">Нижний Новгород</a>
+                    <a href="#" class="city">Нижний Новгород</a>
+                  </div>
+                </div>
+              </li>
+              <li><a href="#">Наши магазины</a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+            </ul>
+
+            <a href="#" class="btn btn-accent">Стать партнером</a>
+
+            <div class="dropdown dropdown-contacts">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="dropdown-toggle__phone">8 (800) 222 81 01</span>
+                <span>Еще</span>
+              </a>
+              <div class="dropdown-menu">
+                <div class="contacts-item">
+                  <p>Горячая линия</p>
+                  <a href="tel:+78005009023" class="contacts-item__links">8 800 500 90 23</a>
+                </div>
+                <div class="contacts-item">
+                  <p>Служба поддержки клиентов </p>
+                  <a href="tel:+79506532255" class="contacts-item__links">8 950 653 22 55</a>
+                </div>
+                <div class="contacts-item">
+                  <p>E-mail</p>
+                  <a href="mailto:info@elna-mebel.com" class="contacts-item__links">info@elna-mebel.com</a>
+                </div>
+              </div>
+            </div>
+
+            <ul class="list-messenger my-ul">
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#telegram"></use>
+                </svg>
+              </a></li>
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#whatsapp"></use>
+                </svg>
+              </a></li>
+              <li><a href="#">
+                <svg class="svg-icon fill-none">
+                  <use xlink:href="img/sprite.svg#viber"></use>
+                </svg>
+              </a></li>
+            </ul>
+
+            <a href="#" class="links-white mr-25" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a>
+
+            <a href="#" class="links-white">Контакты</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+            <div class="description-company">Производство
+              корпусной мебели
+            </div>
+
+            <div class="company-experience">
+              <div class="company-experience__logo"><img src="img/logo-year.svg" alt=""></div>
+              <div class="company-experience__text">Фабрика
+                основана в 1999г.
+              </div>
+            </div>
+
+            <form method="post" class="form-search">
+              <label><input type="text" placeholder="Нижний" name="name"></label>
+              <button type="submit">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+
+            <ul class="navigation-user my-ul">
+              <li>
+                <a href="#" class="navigation-user-links">
+                  <span class="navigation-user-links__icon fill-none"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#bookmarks"></use></svg></span>
+                  <span class="navigation-user-links__text">25</span>
+                </a>
+              </li>
+              <li class="dropdown dropdown-user user-links">
+                <a href="#" class="navigation-user-links dropdown-toggle" data-toggle="dropdown">
+                  <span class="navigation-user-links__icon"><img src="img/user.svg" alt=""></span>
+                </a>
+                <div class="dropdown-menu">
+                  1
+                </div>
+              </li>
+              <li>
+                <a href="#" class="navigation-user-links basket-links">
+                  <span class="navigation-user-links__icon">
+                    <svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#basket"></use></svg>
+                  </span>
+                  <span class="navigation-user-links__text">1</span>
+                  <span class="basket-links__value">755 000 ₽</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--### HEADER end ###-->
+
+
+  <!--### SECTION  ###-->
+  <main class="home">
+    <ul class="list-social list-social-column my-ul">
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#instagram"></use>
+        </svg>
+      </a></li>
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#vk"></use>
+        </svg>
+      </a></li>
+    </ul>
+
+    <div class="home-slider">
+      <div class="slide">
+        <img src="img/slide1.webp" alt="" class="home-slider__bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="home-slider__item">
+                <div class="home-slider__title">Грани земли</div>
+                <div class="home-slider__text">
+                  <p>Природность фактур в строй геометрии.</p>
+                </div>
+
+                <a href="#" class="btn btn-md btn-accent">
+                  <span class="btn-text">Подробнее</span>
+                  <span class="btn-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="img/slide2.webp" alt="" class="home-slider__bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="home-slider__item">
+                <div class="home-slider__title">Грани земли</div>
+                <div class="home-slider__text">
+                  <p>Природность фактур в строй геометрии.</p>
+                </div>
+
+                <a href="#" class="btn btn-md btn-accent">
+                  <span class="btn-text">Подробнее</span>
+                  <span class="btn-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="img/slide3.webp" alt="" class="home-slider__bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="home-slider__item">
+                <div class="home-slider__title">Грани земли</div>
+                <div class="home-slider__text">
+                  <p>Природность фактур в строй геометрии.</p>
+                </div>
+
+                <a href="#" class="btn btn-md btn-accent">
+                  <span class="btn-text">Подробнее</span>
+                  <span class="btn-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="img/slide4.webp" alt="" class="home-slider__bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="home-slider__item">
+                <div class="home-slider__title">Грани земли</div>
+                <div class="home-slider__text">
+                  <p>Природность фактур в строй геометрии.</p>
+                </div>
+
+                <a href="#" class="btn btn-md btn-accent">
+                  <span class="btn-text">Подробнее</span>
+                  <span class="btn-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--### SECTION home END ###-->
+
+  <!--### SECTION advantages ###-->
+  <div class="advantages">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="advantages-wrapper">
+            <div class="advantages-box">
+              <p>Большой выбор мебели. Всегда новые коллекции и модели. Возможность индивидуального изготовления.</p>
+            </div>
+            <div class="advantages-box">
+              <p>Разнообразие стилей и решений от профессиональных дизайнеров Elna mebel.</p>
+            </div>
+            <div class="advantages-box">
+              <p>Обширная география доставки и сотрудничества — вся Россия и СНГ</p>
+            </div>
+            <div class="advantages-box">
+              <p>Только безопасные и соверменные материалы изготовления</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="advantages-category">
+            <div class="advantages-category-item">
+              <div class="advantages-category-item__icon"><img src="img/adv-icon1.svg" alt=""></div>
+              <div class="advantages-category-item__text">
+                <p>Приятные цены без посредников, напрямую от производителя.</p>
+                <a href="catalog.html" class="btn btn-md btn-border">Каталог товаров</a>
+              </div>
+            </div>
+            <div class="advantages-category-item">
+              <div class="advantages-category-item__icon"><img src="img/adv-icon2.svg" alt=""></div>
+              <div class="advantages-category-item__text">
+                <p>Выгодные условия для оптовых клиентов, диллеров и партнеров. Изготовление уникальной мебели.</p>
+                <a href="#" class="btn btn-md btn-border">Условия</a>
+              </div>
+            </div>
+            <div class="advantages-category-item">
+              <div class="advantages-category-item__icon"><img src="img/adv-icon3.svg" alt=""></div>
+              <div class="advantages-category-item__text">
+                <p>Сотрудничаем со строительными компаниями и студиями дизайна</p>
+                <a href="contacts.html" class="btn btn-md btn-border">Связаться</a>
+              </div>
+            </div>
+            <div class="advantages-category-item">
+              <div class="advantages-category-item__icon"><img src="img/adv-icon4.svg" alt=""></div>
+              <div class="advantages-category-item__text">
+                <p>Изготавливаем мебель под конкртеные требования для бизнеса и гос. учреждений.</p>
+                <a href="#" class="btn btn-md btn-border" data-toggle="modal" data-target="#callbackModal">Заявка</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--### SECTION advantages END ###-->
+
+
+  <!--### SECTION  ###-->
+  <section class="">
+    <div class="container">
+
+    </div>
+  </section>
+  <!--### SECTION END ###-->
+
+  <!--### SECTION  ###-->
+  <section class="">
+    <div class="container">
+
+    </div>
+  </section>
+  <!--### SECTION END ###-->
+
+
+  <!--### SECTION  ###-->
+  <section class="">
+    <div class="container">
+
+    </div>
+  </section>
+  <!--### SECTION END ###-->
+
+
+  <!--### FOOTER  ###-->
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--### FOOTER END ###-->
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"
+    integrity="sha512-2hIlk2fL+NNHkULe9gGdma/T5vSYk80U5tvAFSy3dGEl8XD4h2i6frQvHv5B+bm/Itmi8nJ6krAcj5FWFcBGig=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

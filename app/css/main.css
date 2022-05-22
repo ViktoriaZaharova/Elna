@@ -1,0 +1,162 @@
+/*==========  section home ==========*/
+.home {
+  position: relative; }
+  .home .list-social {
+    top: 30px;
+    right: 30px;
+    position: absolute;
+    z-index: 1; }
+
+.home-slider__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1; }
+
+.home-slider .slide {
+  position: relative;
+  z-index: 1; }
+  .home-slider .slide:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2)));
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    z-index: 1; }
+
+.home-slider__title {
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0 12px 60px rgba(0, 0, 0, 0.5);
+  font-size: 56px;
+  font-weight: 600;
+  margin: 0 auto 10px; }
+
+.home-slider__text {
+  text-align: center;
+  text-shadow: 0 12px 60px rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  font-weight: 600; }
+
+.home-slider__item {
+  position: relative;
+  width: 100%;
+  min-height: 777px;
+  color: #fff;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.home-slider .slick-dots {
+  bottom: 104px; }
+
+.home-slider .btn {
+  margin: 30px auto 0; }
+
+/*==========  section home end  ==========*/
+/*==========  section advantages ==========*/
+.advantages {
+  margin: -63px 0 50px;
+  position: relative;
+  z-index: 1; }
+
+.advantages-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-shadow: 0 20px 80px -20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 80px -20px rgba(0, 0, 0, 0.1);
+  background: #3A3B3F;
+  color: #fff;
+  margin: 0 0 51px; }
+
+.advantages-box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 40px 60px;
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 135%;
+  border-right: 1px solid rgba(255, 255, 255, 0.1); }
+  .advantages-box:last-child {
+    border: none; }
+  .advantages-box:before {
+    content: '';
+    margin: 0 0 20px;
+    width: 8px;
+    height: 8px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#DE2C29), to(#DE2C29)), #A81815;
+    background: linear-gradient(0deg, #DE2C29, #DE2C29), #A81815;
+    display: inline-block; }
+
+.advantages-category {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.advantages-category-item {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 30px 60px 20px;
+  border-right: 1px solid #E6E6E6; }
+  .advantages-category-item:last-child {
+    border: none; }
+  .advantages-category-item__icon {
+    margin: 0 0 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 128px; }
+    .advantages-category-item__icon img {
+      max-height: 100%; }
+  .advantages-category-item .btn {
+    margin: 30px 0 0; }
+
+/*==========  section advantages end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/
