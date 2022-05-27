@@ -24,7 +24,8 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
         integrity="sha512-6qkvBbDyl5TDJtNJiC8foyEVuB6gxMBkrKy67XpqnIDxyvLLPJzmTjAj1dRJfNdmXWqD10VbJoeN4pOQqDwvRA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"/>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -38,8 +39,232 @@
 
 <div class="wrapper">
 
-  <div class="fixed-navigation">
+  <div class="overlay-bg"></div>
 
+  <div class="fixed-navigation">
+    <ul class="my-ul menu-navigation">
+      <li class="menu-navigation__item">
+        <a href="index.html" class="menu-navigation__links">
+          <span class="menu-navigation__links-icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#icon-category1"></use></svg></span>
+          <span class="menu-navigation__links-text">Главная</span>
+        </a>
+      </li>
+
+      <li class="menu-navigation__item js-tab-trigger" data-tab="1">
+        <a href="#" class="menu-navigation__links">
+          <span class="menu-navigation__links-icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#icon-category2"></use></svg></span>
+          <span class="menu-navigation__links-text">Серийная <br>мебель</span>
+        </a>
+      </li>
+
+      <li class="menu-navigation__item">
+        <a href="#" class="menu-navigation__links">
+          <span class="menu-navigation__links-icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#icon-category3"></use></svg></span>
+          <span class="menu-navigation__links-text">Мебель <br>на заказ</span>
+        </a>
+      </li>
+
+      <li class="menu-navigation__item">
+        <a href="#" class="menu-navigation__links">
+          <span class="menu-navigation__links-icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#icon-category4"></use></svg></span>
+          <span class="menu-navigation__links-text">Конструктор <br>мебели</span>
+        </a>
+      </li>
+
+      <li class="menu-navigation__item js-tab-trigger" data-tab="2">
+        <a href="#" class="menu-navigation__links dropdown-toggle">
+          <span class="menu-navigation__links-icon stroke-none"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#icon-category5"></use></svg></span>
+          <span class="menu-navigation__links-text">Услуги</span>
+        </a>
+
+      </li>
+
+      <li class="menu-navigation__item js-tab-trigger" data-tab="3">
+        <a href="#" class="menu-navigation__links">
+          <span class="menu-navigation__links-icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#icon-category6"></use></svg></span>
+          <span class="menu-navigation__links-text">Информация</span>
+        </a>
+      </li>
+
+      <li class="menu-navigation__item js-tab-trigger" data-tab="4">
+        <a href="#" class="menu-navigation__links">
+          <span class="menu-navigation__links-icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#icon-category7"></use></svg></span>
+          <span class="menu-navigation__links-text">Оптовым <br>партнерам</span>
+        </a>
+      </li>
+
+      <li class="menu-navigation__item js-tab-trigger" data-tab="5">
+        <a href="#" class="menu-navigation__links">
+          <span class="menu-navigation__links-icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#icon-category5"></use></svg></span>
+          <span class="menu-navigation__links-text">О компании</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="dropdown-menu-right">
+      <a href="#" class="btn-close-submenu">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </a>
+      <div class="dropdown-submenu js-tab-content" data-tab="1">
+        <div class="dropdown-submenu__wrapper">
+          <div class="dropdown-submenu__title"><h3>Серийная <br>мебель</h3></div>
+
+          <ul class="menu-navigation-submenu my-ul">
+            <li><a href="#">
+                <span class="menu-navigation-submenu__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#icon-submenu1"></use></svg></span>
+              <span class="menu-navigation-submenu__text">Распродажа мебели</span></a></li>
+            <li><a href="#">
+                <span class="menu-navigation-submenu__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#icon-submenu2"></use></svg></span>
+              <span class="menu-navigation-submenu__text">Мебель по акции</span></a></li>
+            <li><a href="#">
+                <span class="menu-navigation-submenu__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#icon-submenu3"></use></svg></span>
+              <span class="menu-navigation-submenu__text">Мягкая мебель</span></a></li>
+            <li class="js-tab-trigger" data-tab="6">
+              <a href="#">
+                  <span class="menu-navigation-submenu__icon"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#icon-submenu4"></use></svg></span>
+                <span class="menu-navigation-submenu__text">Шкафы и стеллажи</span></a>
+            </li>
+            <li><a href="#">
+                <span class="menu-navigation-submenu__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#icon-submenu5"></use></svg></span>
+              <span class="menu-navigation-submenu__text">Столы и стулья</span></a></li>
+            <li><a href="#">
+                <span class="menu-navigation-submenu__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#icon-submenu6"></use></svg></span>
+              <span class="menu-navigation-submenu__text">Тумбы и комоды</span></a></li>
+            <li><a href="#">
+                <span class="menu-navigation-submenu__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#icon-submenu7"></use></svg></span>
+              <span class="menu-navigation-submenu__text">Спальня</span></a></li>
+            <li><a href="#">
+                <span class="menu-navigation-submenu__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#icon-submenu8"></use></svg></span>
+              <span class="menu-navigation-submenu__text">Готовые кухни</span></a></li>
+            <li><a href="#">
+                <span class="menu-navigation-submenu__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#icon-submenu9"></use></svg></span>
+              <span class="menu-navigation-submenu__text">Домашний офис</span></a></li>
+            <li><a href="#">
+                <span class="menu-navigation-submenu__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#icon-submenu10"></use></svg></span>
+              <span class="menu-navigation-submenu__text">Прихожие</span></a></li>
+            <li><a href="#">
+                <span class="menu-navigation-submenu__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#icon-submenu11"></use></svg></span>
+              <span class="menu-navigation-submenu__text">Мебель лофт</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="dropdown-submenu js-tab-content" data-tab="2">
+        <div class="dropdown-submenu__wrapper">
+          <div class="dropdown-submenu__title"><h3>2 О компании</h3></div>
+
+          <ul class="menu-navigation-submenu my-ul">
+            <li><a href="#"><span class="menu-navigation-submenu__text">Производство</span></a></li>
+            <li><a href="#"><span class="menu-navigation-submenu__text">Мебель по акции</span></a></li>
+            <li><a href="#"><span class="menu-navigation-submenu__text">Наши магазины</span></a></li>
+            <li><a href="#"><span class="menu-navigation-submenu__text">Материалы</span></a></li>
+            <li><a href="#"><span class="menu-navigation-submenu__text">Портфолио</span></a></li>
+            <li><a href="#"><span class="menu-navigation-submenu__text">Сертификаты и награды</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="dropdown-submenu js-tab-content" data-tab="3">
+        <div class="dropdown-submenu__wrapper">
+          <div class="dropdown-submenu__title"><h3>2 О компании</h3></div>
+
+          <ul class="menu-navigation-submenu my-ul">
+            <li><a href="#"><span class="menu-navigation-submenu__text">Производство</span></a></li>
+            <li><a href="#"><span class="menu-navigation-submenu__text">Мебель по акции</span></a></li>
+            <li><a href="#"><span class="menu-navigation-submenu__text">Наши магазины</span></a></li>
+            <li><a href="#"><span class="menu-navigation-submenu__text">Материалы</span></a></li>
+            <li><a href="#"><span class="menu-navigation-submenu__text">Портфолио</span></a></li>
+            <li><a href="#"><span class="menu-navigation-submenu__text">Сертификаты и награды</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="dropdown-submenu js-tab-content" data-tab="4">
+        <div class="dropdown-submenu__wrapper">
+          <div class="dropdown-submenu__title"><h3>2 О компании</h3></div>
+
+          <ul class="menu-navigation-submenu my-ul">
+            <li><a href="#"><span class="menu-navigation-submenu__text">Производство</span></a></li>
+            <li><a href="#"><span class="menu-navigation-submenu__text">Мебель по акции</span></a></li>
+            <li><a href="#"><span class="menu-navigation-submenu__text">Наши магазины</span></a></li>
+            <li><a href="#"><span class="menu-navigation-submenu__text">Материалы</span></a></li>
+            <li><a href="#"><span class="menu-navigation-submenu__text">Портфолио</span></a></li>
+            <li><a href="#"><span class="menu-navigation-submenu__text">Сертификаты и награды</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="dropdown-submenu js-tab-content" data-tab="5">
+        <div class="dropdown-submenu__wrapper">
+          <div class="dropdown-submenu__title"><h3>О компании</h3></div>
+
+          <ul class="menu-navigation-submenu my-ul">
+            <li><a href="#"><span class="menu-navigation-submenu__text">Производство</span></a></li>
+            <li><a href="#"><span class="menu-navigation-submenu__text">Мебель по акции</span></a></li>
+            <li><a href="#"><span class="menu-navigation-submenu__text">Наши магазины</span></a></li>
+            <li><a href="#"><span class="menu-navigation-submenu__text">Материалы</span></a></li>
+            <li><a href="#"><span class="menu-navigation-submenu__text">Портфолио</span></a></li>
+            <li><a href="#"><span class="menu-navigation-submenu__text">Сертификаты и награды</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="dropdown-submenu dropdown-submenu-level js-tab-content" data-tab="6">
+        <div class="dropdown-submenu__wrapper">
+          <div class="dropdown-submenu__title"><h3>Шкафы и <br>стеллажи</h3></div>
+
+          <ul class="menu-navigation-submenu my-ul">
+            <li><a href="#">
+                <span class="menu-navigation-submenu__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#icon-submenu4"></use></svg></span>
+              <span class="menu-navigation-submenu__text">Показать все товары</span></a></li>
+            <li><a href="#">
+              <span class="menu-navigation-submenu__icon"><img src="img/category-img1.png" alt=""></span>
+              <span class="menu-navigation-submenu__text">Гардеробный шкаф</span></a></li>
+            <li><a href="#">
+                <span class="menu-navigation-submenu__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#icon-submenu3"></use></svg></span>
+              <span class="menu-navigation-submenu__text">Двухстворчатый</span></a></li>
+            <li>
+              <a href="#">
+                <span class="menu-navigation-submenu__icon"><img src="img/category-img2.png" alt=""></span>
+                <span class="menu-navigation-submenu__text">Двухстворчатый</span></a>
+            </li>
+            <li><a href="#">
+              <span class="menu-navigation-submenu__icon"><img src="img/category-img3.png" alt=""></span>
+              <span class="menu-navigation-submenu__text">Офисный для одежды</span></a></li>
+            <li><a href="#">
+              <span class="menu-navigation-submenu__icon"><img src="img/category-img4.png" alt=""></span>
+              <span class="menu-navigation-submenu__text">Платяной шкаф</span></a></li>
+            <li><a href="#">
+              <span class="menu-navigation-submenu__icon"><img src="img/category-img5.png" alt=""></span>
+              <span class="menu-navigation-submenu__text">Трехстворчатый</span></a></li>
+            <li><a href="#">
+              <span class="menu-navigation-submenu__icon"><img src="img/category-img6.png" alt=""></span>
+              <span class="menu-navigation-submenu__text">Шкаф-купе</span></a></li>
+            <li><a href="#">
+              <span class="menu-navigation-submenu__icon"><img src="img/category-img7.png" alt=""></span>
+              <span class="menu-navigation-submenu__text">Шкаф-пенал</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!--### HEADER ###-->
@@ -356,55 +581,1945 @@
   <!--### SECTION advantages END ###-->
 
 
-  <!--### SECTION  ###-->
-  <section class="">
+  <!--### SECTION serial-furniture ###-->
+  <section class="serial-furniture bg-light-grey p-100">
     <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Серийная мебель</h2>
+        </div>
 
+        <div class="col-12">
+          <div class="serial-furniture-wrapper">
+            <a href="#" class="serial-furniture-box">
+              <span class="serial-furniture-box__icon">
+                <img src="img/serial1.svg" alt="" class="img-default">
+              <img src="img/serial1-hover.svg" alt="" class="img-hover">
+              </span>
+              <span class="serial-furniture-box__text">
+                <span>Распродажа</span>
+              </span>
+            </a>
+            <a href="#" class="serial-furniture-box">
+              <span class="serial-furniture-box__icon"><img src="img/serial2.svg" alt=""></span>
+              <span class="serial-furniture-box__text">
+                <span>Мебель по акции</span>
+              </span>
+            </a>
+            <a href="#" class="serial-furniture-box">
+              <span class="serial-furniture-box__icon"><img src="img/serial3.svg" alt=""></span>
+              <span class="serial-furniture-box__text">
+                <span>Мягкая мебель</span>
+              </span>
+            </a>
+            <a href="#" class="serial-furniture-box">
+              <span class="serial-furniture-box__icon"><img src="img/serial4.svg" alt=""></span>
+              <span class="serial-furniture-box__text">
+                <span>Шкафы и стеллажи</span>
+              </span>
+            </a>
+            <a href="#" class="serial-furniture-box">
+              <span class="serial-furniture-box__icon"><img src="img/serial5.svg" alt=""></span>
+              <span class="serial-furniture-box__text">
+                <span>Столы и стулья</span>
+              </span>
+            </a>
+            <a href="#" class="serial-furniture-box">
+              <span class="serial-furniture-box__icon"><img src="img/serial6.svg" alt=""></span>
+              <span class="serial-furniture-box__text">
+                <span>Тумбы и комоды</span>
+              </span>
+            </a>
+            <a href="#" class="serial-furniture-box">
+              <span class="serial-furniture-box__icon"><img src="img/serial7.svg" alt=""></span>
+              <span class="serial-furniture-box__text">
+                <span>Спальня</span>
+              </span>
+            </a>
+            <a href="#" class="serial-furniture-box">
+              <span class="serial-furniture-box__icon"><img src="img/serial8.svg" alt=""></span>
+              <span class="serial-furniture-box__text">
+                <span>Готовые кухни</span>
+              </span>
+            </a>
+            <a href="#" class="serial-furniture-box">
+              <span class="serial-furniture-box__icon"><img src="img/serial9.svg" alt=""></span>
+              <span class="serial-furniture-box__text">
+                <span>Домашний офис</span>
+              </span>
+            </a>
+            <a href="#" class="serial-furniture-box">
+              <span class="serial-furniture-box__icon"><img src="img/serial10.svg" alt=""></span>
+              <span class="serial-furniture-box__text">
+                <span>Прихожие</span>
+              </span>
+            </a>
+            <a href="#" class="serial-furniture-box">
+              <span class="serial-furniture-box__icon"><img src="img/serial11.svg" alt=""></span>
+              <span class="serial-furniture-box__text">
+                <span>Мебель лофт</span>
+              </span>
+            </a>
+            <a href="#" class="serial-furniture-box">
+              <span class="serial-furniture-box__icon"><img src="img/serial12.svg" alt=""></span>
+              <span class="serial-furniture-box__text">
+                <span>Мебель эконом-класс</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <!--### SECTION END ###-->
+  <!--### SECTION serial-furniture END ###-->
 
-  <!--### SECTION  ###-->
-  <section class="">
+  <!--### SECTION all-interesting ###-->
+  <section class="all-interesting m-100">
     <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Все самое интересное</h2>
+        </div>
 
+        <div class="col-12">
+          <ul class="nav nav-pills nav-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="pills-news-tab" data-toggle="pill" href="#pills-news" role="tab"
+                 aria-controls="pills-news" aria-selected="true">Новинки</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-sales-tab" data-toggle="pill" href="#pills-sales" role="tab"
+                 aria-controls="pills-sales" aria-selected="false">Акции</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-hits-tab" data-toggle="pill" href="#pills-hits" role="tab"
+                 aria-controls="pills-hits" aria-selected="false">Хиты</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-season-tab" data-toggle="pill" href="#pills-season" role="tab"
+                 aria-controls="pills-season" aria-selected="false">Сезон</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="pills-news" role="tabpanel" aria-labelledby="pills-news-tab">
+              <div class="products-row">
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product1.png" alt="">
+                    <span class="status-product bg-red">Новинка</span>
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">17 700 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product2.png" alt="">
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">12 500 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite active">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product3.png" alt="">
+                    <span class="status-product bg-red">Новинка</span>
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">25 000 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite active">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product4.png" alt="">
+                    <span class="status-product bg-red">Новинка</span>
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">12 200 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product5.png" alt="">
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">21 900 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite active">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product6.png" alt="">
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">12 200 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product7.png" alt="">
+                    <span class="status-product bg-red">Новинка</span>
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">17 700 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite active">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product8.png" alt="">
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">12 500 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product9.png" alt="">
+
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">21 900 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite active">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product5.png" alt="">
+                    <span class="status-product bg-red">Новинка</span>
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">25 000 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-sales" role="tabpanel" aria-labelledby="pills-sales-tab">
+              <div class="products-row">
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product1.png" alt="">
+                    <span class="status-product bg-red">Новинка</span>
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">17 700 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product2.png" alt="">
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">12 500 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite active">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product3.png" alt="">
+                    <span class="status-product bg-red">Новинка</span>
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">25 000 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite active">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product4.png" alt="">
+                    <span class="status-product bg-red">Новинка</span>
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">12 200 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product5.png" alt="">
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">21 900 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite active">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product6.png" alt="">
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">12 200 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product7.png" alt="">
+                    <span class="status-product bg-red">Новинка</span>
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">17 700 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite active">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product8.png" alt="">
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">12 500 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product9.png" alt="">
+
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">21 900 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite active">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product5.png" alt="">
+                    <span class="status-product bg-red">Новинка</span>
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">25 000 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-hits" role="tabpanel" aria-labelledby="pills-hits-tab">
+              <div class="products-row">
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product1.png" alt="">
+                    <span class="status-product bg-red">Новинка</span>
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">17 700 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product2.png" alt="">
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">12 500 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite active">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product3.png" alt="">
+                    <span class="status-product bg-red">Новинка</span>
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">25 000 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite active">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product4.png" alt="">
+                    <span class="status-product bg-red">Новинка</span>
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">12 200 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product5.png" alt="">
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">21 900 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite active">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product6.png" alt="">
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">12 200 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product7.png" alt="">
+                    <span class="status-product bg-red">Новинка</span>
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">17 700 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite active">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product8.png" alt="">
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">12 500 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product9.png" alt="">
+
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">21 900 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite active">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product5.png" alt="">
+                    <span class="status-product bg-red">Новинка</span>
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">25 000 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-season" role="tabpanel" aria-labelledby="pills-season-tab">
+              <div class="products-row">
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product1.png" alt="">
+                    <span class="status-product bg-red">Новинка</span>
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">17 700 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product2.png" alt="">
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">12 500 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite active">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product3.png" alt="">
+                    <span class="status-product bg-red">Новинка</span>
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">25 000 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite active">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product4.png" alt="">
+                    <span class="status-product bg-red">Новинка</span>
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">12 200 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product5.png" alt="">
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">21 900 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite active">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product6.png" alt="">
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">12 200 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product7.png" alt="">
+                    <span class="status-product bg-red">Новинка</span>
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">17 700 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite active">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product8.png" alt="">
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">12 500 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product9.png" alt="">
+
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">21 900 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite active">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__photo">
+                    <img src="img/product5.png" alt="">
+                    <span class="status-product bg-red">Новинка</span>
+                  </a>
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Тумба Элегант 12</a>
+                    <div class="product-card__info">2100*570*400 (Фасады ЛДСП)</div>
+
+                    <div class="product-card__price">
+                      <div class="price">25 000 ₽</div>
+                      <div class="price-description">Розничная
+                        цена
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <ul class="btn-group-list my-ul">
+            <li>
+              <a href="#" class="btn-toggle btn-column">
+              <span class="btn-column__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#plus"></use></svg></span>
+                <span class="btn-column__text">Показать ещё</span>
+              </a>
+            </li>
+
+
+            <li>
+              <a href="#" class="btn-all btn-column">
+              <span class="btn-column__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                <span class="btn-column__text">Показать все</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
-  <!--### SECTION END ###-->
+  <!--### SECTION all-interesting END ###-->
 
 
-  <!--### SECTION  ###-->
-  <section class="">
+  <!--### SECTION advantages-program ###-->
+  <div class="advantages-program">
     <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="advantages-program-wrapper">
+            <div class="advantages-program-box">
+              <div class="advantages-program-box__img"><img src="img/program-img1.png" alt=""></div>
+              <div class="advantages-program-box__body">
+                <h3>Мебель по индивидуальным
+                  размерам</h3>
+                <div class="box-text">
+                  <p>Заказывайте мебель из актуального ассортимента под ваши размеры. Заказывайте уникальные решения по
+                    вашим проектам.</p>
+                </div>
+                <a href="#" class="btn btn-md btn-border">Оставить заявку</a>
+              </div>
+            </div>
 
+            <div class="advantages-program-box">
+              <div class="advantages-program-box__img"><img src="img/program-img2.png" alt=""></div>
+              <div class="advantages-program-box__body">
+                <h3>Онлайн 3D-конструктор <br>мебели</h3>
+                <div class="box-text">
+                  <p>Создайте свой интерьер с никальной атмосферой из нашего каталога товаров.</p>
+                </div>
+                <a href="#" class="btn btn-md btn-border">Оставить заявку</a>
+              </div>
+            </div>
+
+            <div class="advantages-program-box">
+              <div class="advantages-program-box__img"><img src="img/program-img3.png" alt=""></div>
+              <div class="advantages-program-box__body">
+                <h3>У вас есть техническое задание?</h3>
+                <div class="box-text">
+                  <p>Отправьте нам тех. задание или накладную с перечнем товара, мы рассчитаем стоимость и срок
+                    поставки, а также предложим индивидуальные условия сотрудничества.</p>
+                </div>
+                <a href="#" class="btn btn-md btn-border">Оставить заявку</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--### SECTION advantages-program END ###-->
+
+  <!--### SECTION ideas-interior ###-->
+  <section class="ideas-interior m-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Идеи для интерьеров</h2>
+        </div>
+
+        <div class="col-12">
+          <ul class="nav nav-pills nav-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="pills-new-tab" data-toggle="pill" href="#pills-new" role="tab"
+                 aria-controls="pills-new" aria-selected="true">Новые</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-kids-tab" data-toggle="pill" href="#pills-kids" role="tab"
+                 aria-controls="pills-kids" aria-selected="false">Детская</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-living-tab" data-toggle="pill" href="#pills-living" role="tab"
+                 aria-controls="pills-living" aria-selected="false">Гостиная</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-bedroom-tab" data-toggle="pill" href="#pills-bedroom" role="tab"
+                 aria-controls="pills-bedroom" aria-selected="false">Спальня</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-studio-tab" data-toggle="pill" href="#pills-studio" role="tab"
+                 aria-controls="pills-studio" aria-selected="false">Студия</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="pills-new" role="tabpanel" aria-labelledby="pills-new-tab">
+              <div class="products-row">
+                <a href="img/product5.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product5.png"
+                    alt=""></a>
+                <a href="img/product11.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product11.png" alt=""></a>
+                <a href="img/product12.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product12.png" alt=""></a>
+                <a href="img/product13.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product13.png" alt=""></a>
+                <a href="img/product14.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product14.png" alt=""></a>
+                <a href="img/product15.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product15.png" alt=""></a>
+                <a href="img/product9.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product9.png"
+                    alt=""></a>
+                <a href="img/product8.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product8.png"
+                    alt=""></a>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-kids" role="tabpanel" aria-labelledby="pills-kids-tab">
+              <div class="products-row">
+                <a href="img/product5.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product5.png"
+                    alt=""></a>
+                <a href="img/product11.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product11.png" alt=""></a>
+                <a href="img/product12.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product12.png" alt=""></a>
+                <a href="img/product13.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product13.png" alt=""></a>
+                <a href="img/product14.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product14.png" alt=""></a>
+                <a href="img/product15.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product15.png" alt=""></a>
+                <a href="img/product9.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product9.png"
+                    alt=""></a>
+                <a href="img/product8.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product8.png"
+                    alt=""></a>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-living" role="tabpanel" aria-labelledby="pills-living-tab">
+              <div class="products-row">
+                <a href="img/product5.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product5.png"
+                    alt=""></a>
+                <a href="img/product11.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product11.png" alt=""></a>
+                <a href="img/product12.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product12.png" alt=""></a>
+                <a href="img/product13.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product13.png" alt=""></a>
+                <a href="img/product14.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product14.png" alt=""></a>
+                <a href="img/product15.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product15.png" alt=""></a>
+                <a href="img/product9.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product9.png"
+                    alt=""></a>
+                <a href="img/product8.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product8.png"
+                    alt=""></a>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-bedroom" role="tabpanel" aria-labelledby="pills-bedroom-tab">
+              <div class="products-row">
+                <a href="img/product5.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product5.png"
+                    alt=""></a>
+                <a href="img/product11.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product11.png" alt=""></a>
+                <a href="img/product12.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product12.png" alt=""></a>
+                <a href="img/product13.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product13.png" alt=""></a>
+                <a href="img/product14.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product14.png" alt=""></a>
+                <a href="img/product15.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product15.png" alt=""></a>
+                <a href="img/product9.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product9.png"
+                    alt=""></a>
+                <a href="img/product8.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product8.png"
+                    alt=""></a>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-studio" role="tabpanel" aria-labelledby="pills-studio-tab">
+              <div class="products-row">
+                <a href="img/product5.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product5.png"
+                    alt=""></a>
+                <a href="img/product11.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product11.png" alt=""></a>
+                <a href="img/product12.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product12.png" alt=""></a>
+                <a href="img/product13.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product13.png" alt=""></a>
+                <a href="img/product14.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product14.png" alt=""></a>
+                <a href="img/product15.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product15.png" alt=""></a>
+                <a href="img/product9.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product9.png"
+                    alt=""></a>
+                <a href="img/product8.png" class="ideas-interior-box tab-content-col-25" data-fancybox="ideas"><img
+                    src="img/product8.png"
+                    alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <ul class="btn-group-list my-ul mt-40">
+            <li>
+              <a href="#" class="btn-toggle btn-column">
+              <span class="btn-column__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#plus"></use></svg></span>
+                <span class="btn-column__text">Показать ещё</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="btn-all btn-column">
+              <span class="btn-column__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                <span class="btn-column__text">Показать все</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
-  <!--### SECTION END ###-->
+  <!--### SECTION ideas-interior END ###-->
 
+
+  <!--### SECTION useful-publications ###-->
+  <section class="useful-publications m-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Полезные публикации</h2>
+        </div>
+
+        <div class="col-12">
+          <ul class="nav nav-pills nav-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="pills-all-public-tab" data-toggle="pill" href="#pills-all-public"
+                 role="tab"
+                 aria-controls="pills-all-public" aria-selected="true">Все публикации</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-new-public-tab" data-toggle="pill" href="#pills-new-public" role="tab"
+                 aria-controls="pills-new-public" aria-selected="false">Новости</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-article-public-tab" data-toggle="pill" href="#pills-article-public"
+                 role="tab"
+                 aria-controls="pills-article-public" aria-selected="false">Статьи</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="pills-all-public" role="tabpanel"
+                 aria-labelledby="pills-all-public-tab">
+              <div class="products-row">
+                <div class="tab-content-col-25 useful-publications-box">
+                  <a href="#" class="useful-publications-box__img"><img src="img/public1.jpeg" alt=""></a>
+                  <div class="useful-publications-box__body">
+                    <div class="date">15 марта 2020</div>
+                    <a href="#" class="useful-publications-box__title">Достоинства эмалевой мебели</a>
+                    <div class="box-text">
+                      <p>Отделочные материалы и мебель для кухни должны отличаться устойчивостью к влажности
+                        и загрязнениям</p>
+                    </div>
+
+                    <a href="#" class="useful-publications-box__category">Новость</a>
+                  </div>
+                </div>
+                <div class="tab-content-col-25 useful-publications-box">
+                  <a href="#" class="useful-publications-box__img"><img src="img/public2.jpeg" alt=""></a>
+                  <div class="useful-publications-box__body">
+                    <div class="date">15 марта 2020</div>
+                    <a href="#" class="useful-publications-box__title">Разновидности шкафов</a>
+                    <div class="box-text">
+                      <p>Вряд ли получится найти более функциональную, удобную и вместительную систему для хранения
+                        вещей, чем шкаф</p>
+                    </div>
+
+                    <a href="#" class="useful-publications-box__category">Новость</a>
+                  </div>
+                </div>
+                <div class="tab-content-col-25 useful-publications-box">
+                  <a href="#" class="useful-publications-box__img"><img src="img/public3.jpeg" alt=""></a>
+                  <div class="useful-publications-box__body">
+                    <div class="date">15 марта 2020</div>
+                    <a href="#" class="useful-publications-box__title">Как ухаживать за мебелью?</a>
+                    <div class="box-text">
+                      <p>Необходимо защищать кухонную мебель от прямого воздействия солнечного света в течение
+                        продолжительного времени</p>
+                    </div>
+
+                    <a href="#" class="useful-publications-box__category">Новость</a>
+                  </div>
+                </div>
+                <div class="tab-content-col-25 useful-publications-box">
+                  <a href="#" class="useful-publications-box__img"><img src="img/public4.jpeg" alt=""></a>
+                  <div class="useful-publications-box__body">
+                    <div class="date">15 марта 2020</div>
+                    <a href="#" class="useful-publications-box__title">Что нужно знать при выборе мебели?</a>
+                    <div class="box-text">
+                      <p>Создание интерьера в стиле фьюжн требует незаурядного дизайнерского мастерства, тонкого вкуса и
+                        опыта</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-new-public" role="tabpanel" aria-labelledby="pills-new-public-tab">
+              ...
+            </div>
+            <div class="tab-pane fade" id="pills-article-public" role="tabpanel"
+                 aria-labelledby="pills-article-public-tab">...
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <ul class="btn-group-list my-ul mt-40">
+            <li>
+              <a href="#" class="btn-toggle btn-column">
+              <span class="btn-column__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#plus"></use></svg></span>
+                <span class="btn-column__text">Показать ещё</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="btn-all btn-column">
+              <span class="btn-column__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                <span class="btn-column__text">Показать все</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--### SECTION useful-publications END ###-->
+
+
+  <div class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="about-content">
+            <a href="index.html" class="logo-company"><img src="img/logo.svg" alt=""></a>
+            <div class="description-company">
+              <p>Профессиональная команда дизайнеров, конструкторов, технологов и менеджеров, влюбленных в красоту.</p>
+            </div>
+            <div class="box-text">
+              <p>Мы делаем мебель, меняющую ваше представление об удобстве и функциональности. Исследуя рынок мебельного
+                производства, мы в числе первых внедряем интересные находки и изобретаем собственные инновации.</p>
+            </div>
+
+            <a href="#" class="btn btn-md btn-border">Подробнее о нас</a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="about-slider">
+            <div class="slide">
+              <div class="video-box">
+                <img src="img/about-slide.png" alt="">
+                <a href="#" class="btn-play"></a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="video-box">
+                <img src="img/about-slide.png" alt="">
+                <a href="#" class="btn-play"></a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="video-box">
+                <img src="img/about-slide.png" alt="">
+                <a href="#" class="btn-play"></a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="video-box">
+                <img src="img/about-slide.png" alt="">
+                <a href="#" class="btn-play"></a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="video-box">
+                <img src="img/about-slide.png" alt="">
+                <a href="#" class="btn-play"></a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="video-box">
+                <img src="img/about-slide.png" alt="">
+                <a href="#" class="btn-play"></a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="video-box">
+                <img src="img/about-slide.png" alt="">
+                <a href="#" class="btn-play"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="partners pt-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Наши партнеры</h2>
+        </div>
+      </div>
+    </div>
+    <div class="partners-wrapper bg-light-grey">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="partners-slider">
+              <div class="slide">
+                <div class="partners-box"><img src="img/schock.png" alt=""></div>
+              </div>
+              <div class="slide">
+                <div class="partners-box"><img src="img/kuppersberg.png" alt=""></div>
+              </div>
+              <div class="slide">
+                <div class="partners-box"><img src="img/siemens.png" alt=""></div>
+              </div>
+              <div class="slide">
+                <div class="partners-box"><img src="img/korting.png" alt=""></div>
+              </div>
+              <div class="slide">
+                <div class="partners-box"><img src="img/aqwa.png" alt=""></div>
+              </div>
+              <div class="slide">
+                <div class="partners-box"><img src="img/faber.png" alt=""></div>
+              </div>
+              <div class="slide">
+                <div class="partners-box"><img src="img/schock.png" alt=""></div>
+              </div>
+              <div class="slide">
+                <div class="partners-box"><img src="img/kuppersberg.png" alt=""></div>
+              </div>
+              <div class="slide">
+                <div class="partners-box"><img src="img/siemens.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services m-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Наши услуги</h2>
+        </div>
+
+        <div class="col-12">
+          <div class="services-wrapper">
+            <a href="#" class="services-box">
+              <span class="services-box__icon"><img src="img/service1.svg" alt=""></span>
+              <span class="services-box__name">Мебель на заказ по индивидуальным размерам</span>
+            </a>
+            <a href="#" class="services-box">
+              <span class="services-box__icon"><img src="img/service2.svg" alt=""></span>
+              <span class="services-box__name">Кредит, кэшбек и рассрочка</span>
+            </a>
+            <a href="#" class="services-box">
+              <span class="services-box__icon"><img src="img/service3.svg" alt=""></span>
+              <span class="services-box__name">Замер помещения</span>
+            </a>
+            <a href="#" class="services-box">
+              <span class="services-box__icon"><img src="img/service4.svg" alt=""></span>
+              <span class="services-box__name">Сборка мебели</span>
+            </a>
+            <a href="#" class="services-box">
+              <span class="services-box__icon"><img src="img/service5.svg" alt=""></span>
+              <span class="services-box__name">Доставка мебели</span>
+            </a>
+            <a href="#" class="services-box">
+              <span class="services-box__icon"><img src="img/service6.svg" alt=""></span>
+              <span class="services-box__name">3D визуализация</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews p-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <h2>Отзывы наших клиентов</h2>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <a href="#" class="btn btn-md btn-white btn-add-reviews ml-auto">
+            <span class="btn-text">Оставить отзыв |</span>
+            <span class="btn-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#pencil"></use></svg></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="products-row">
+            <div class="tab-content-col-30">
+              <div class="reviews-card">
+                <div class="reviews-card__wrapper">
+                  <div class="reviews-card__head">
+                    <div class="reviews-card__name">
+                      <div class="name-user">Егор Николайченко</div>
+                      <div class="date">15 марта 2020</div>
+                    </div>
+
+                    <div class="reviews-card__photo">ЕН</div>
+                  </div>
+                  <div class="reviews-card__body">
+                    <div class="box-text">
+                      <p>Я сборщик мебели из Тамбовской области! Часто езжу в Кузнецк со своей начальницей и берём в
+                        ЭЛНА МЕБЕЛЬ продукцию! Не знаю как у других там со сборкой, но эта фабрика заслуживает 5+++. У
+                        меня одни положительные эмоции от ихней продукции! Часто езжу в Кузнецк со своей начальницей и
+                        берём в ЭЛНА МЕБЕЛЬ продукцию! Не знаю как у других там со сборкой, но эта фабрика заслуживает
+                        5+++. У меня одни положительные эмоции от ихней продукции!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="answer-box">
+                  <a href="#" class="btn-view">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#view"></use>
+                    </svg>
+                    <span class="btn-view__text">Отзыв целиком</span>
+                  </a>
+                  <div class="answer-box__head">
+                    <p>Ответ</p>
+                    <div class="date">15 марта 2020</div>
+                  </div>
+                  <div class="answer-box__body">
+                    <div class="box-text">
+                      <p>Спасибо Вам за доверие, мы ценим мнение каждого клиента! Ждем вас в будущем.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content-col-30">
+              <div class="reviews-card">
+                <div class="reviews-card__wrapper">
+                  <div class="reviews-card__head">
+                    <div class="reviews-card__name">
+                      <div class="name-user">Кира Астафьева</div>
+                      <div class="date">15 марта 2020</div>
+                    </div>
+
+                    <div class="reviews-card__photo"><img src="img/reviews-photo1.png" alt=""></div>
+                  </div>
+                  <div class="reviews-card__body">
+                    <div class="box-text">
+                      <p>Приобретала Гостиную от этой фабрики. Очень все понравилось! Гостиная шикарная!!! Спасибо
+                        огромное!))))) всем рекомендую!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="answer-box">
+                  <a href="#" class="btn-view">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#view"></use>
+                    </svg>
+                    <span class="btn-view__text">Отзыв целиком</span>
+                  </a>
+                  <div class="answer-box__head">
+                    <p>Ответ</p>
+                    <div class="date">15 марта 2020</div>
+                  </div>
+                  <div class="answer-box__body">
+                    <div class="box-text">
+                      <p>Очень радны, что вам понравилось! Спасибо за отзыв.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content-col-30">
+              <div class="reviews-card">
+                <div class="reviews-card__wrapper">
+                  <div class="reviews-card__head">
+                    <div class="reviews-card__name">
+                      <div class="name-user">Рафаэль</div>
+                      <div class="date">15 марта 2020</div>
+                    </div>
+
+                    <div class="reviews-card__photo">P</div>
+                  </div>
+                  <div class="reviews-card__body">
+                    <div class="box-text">
+                      <p>Заказал мебель себе домой. Кухню и шкаф. Очень красиво получилось. Довольны заказом. Я сборщик
+                        мебели из Тамбовской области! Часто езжу в Кузнецк со своей начальницей и берём в ЭЛНА МЕБЕЛЬ
+                        продукцию! Не знаю как у других там со сборкой, но эта фабрика заслуживает 5+++. У меня одни
+                        положительные эмоции от ихней продукции! Часто езжу в Кузнецк со своей начальницей и берём в
+                        ЭЛНА МЕБЕЛЬ продукцию! Не знаю как у других там со сборкой, но эта фабрика заслуживает 5+++. У
+                        меня одни положительные эмоции от ихней продукции!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="answer-box">
+                  <a href="#" class="btn-view">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#view"></use>
+                    </svg>
+                    <span class="btn-view__text">Отзыв целиком</span>
+                  </a>
+                  <div class="answer-box__head">
+                    <p>Ответ</p>
+                    <div class="date">15 марта 2020</div>
+                  </div>
+                  <div class="answer-box__body">
+                    <div class="box-text">
+                      <p>Спасибо Вам за доверие, мы ценим мнение каждого клиента! Ждем вас в будущем. Спасибо Вам за
+                        доверие, мы ценим мнение каждого клиента! Ждем вас в будущем.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content-col-30">
+              <div class="reviews-card">
+                <div class="reviews-card__wrapper">
+                  <div class="reviews-card__head">
+                    <div class="reviews-card__name">
+                      <div class="name-user">Кира Астафьева</div>
+                      <div class="date">15 марта 2020</div>
+                    </div>
+
+                    <div class="reviews-card__photo"><img src="img/reviews-photo2.png" alt=""></div>
+                  </div>
+                  <div class="reviews-card__body">
+                    <div class="box-text">
+                      <p>Приобретала Гостиную от этой фабрики. Очень все понравилось! Гостиная шикарная!!! Спасибо
+                        огромное!))))) всем рекомендую!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="answer-box">
+                  <a href="#" class="btn-view">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#view"></use>
+                    </svg>
+                    <span class="btn-view__text">Отзыв целиком</span>
+                  </a>
+                  <div class="answer-box__head">
+                    <p>Ответ</p>
+                    <div class="date">15 марта 2020</div>
+                  </div>
+                  <div class="answer-box__body">
+                    <div class="box-text">
+                      <p>Спасибо Вам за доверие, мы ценим мнение каждого клиента! Ждем вас в будущем.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content-col-30">
+              <div class="reviews-card">
+                <div class="reviews-card__wrapper">
+                  <div class="reviews-card__head">
+                    <div class="reviews-card__name">
+                      <div class="name-user">Рафаэль</div>
+                      <div class="date">15 марта 2020</div>
+                    </div>
+
+                    <div class="reviews-card__photo">P</div>
+                  </div>
+                  <div class="reviews-card__body">
+                    <div class="box-text">
+                      <p>Нарушили сроки поставки. Я просил доставить заказ раньше, менеджер подтвердил, что
+                        доставят.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="answer-box">
+                  <a href="#" class="btn-view">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#view"></use>
+                    </svg>
+                    <span class="btn-view__text">Отзыв целиком</span>
+                  </a>
+                  <div class="answer-box__head">
+                    <p>Ответ</p>
+                    <div class="date">15 марта 2020</div>
+                  </div>
+                  <div class="answer-box__body">
+                    <div class="box-text">
+                      <p>Здравствуйте! Вы попросили доставить раньше ранее оговоренного срока поставки, менеджер
+                        пообщала сделать все возможное, чтобы ускорить производство</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content-col-30">
+              <div class="reviews-card">
+                <div class="reviews-card__wrapper">
+                  <div class="reviews-card__head">
+                    <div class="reviews-card__name">
+                      <div class="name-user">Александр Старовойтов</div>
+                      <div class="date">15 марта 2020</div>
+                    </div>
+
+                    <div class="reviews-card__photo"><img src="img/reviews-photo3.png" alt=""></div>
+                  </div>
+                  <div class="reviews-card__body">
+                    <div class="box-text">
+                      <p>Заказывали кухонный гарнитур 20.03.17 года, все быстро и оперативно оформили. Качество на
+                        высшем уровне, Фасады с МДФ сделаны аккуратно по корпусам погрешностей нет, без сколов,
+                        столешница тоже порадовала. Выражаю благодарность</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="answer-box">
+                  <a href="#" class="btn-view">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#view"></use>
+                    </svg>
+                    <span class="btn-view__text">Отзыв целиком</span>
+                  </a>
+                  <div class="answer-box__head">
+                    <p>Ответ</p>
+                    <div class="date">15 марта 2020</div>
+                  </div>
+                  <div class="answer-box__body">
+                    <div class="box-text">
+                      <p>Спасибо Вам за доверие, мы ценим мнение каждого клиента! Ждем вас в будущем.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <ul class="btn-group-list no-border my-ul mt-40">
+            <li>
+              <a href="#" class="btn-toggle btn-column">
+              <span class="btn-column__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#plus"></use></svg></span>
+                <span class="btn-column__text">Показать ещё</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="btn-all btn-column">
+              <span class="btn-column__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                <span class="btn-column__text">Показать все</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!--### FOOTER  ###-->
   <footer>
     <div class="footer-top">
       <div class="container">
         <div class="row">
+          <div class="col-12 col-sm-6 col-md-3">
+            <a href="index.html" class="logo"><img src="img/logo-white.svg" alt=""></a>
 
+            <ul class="list-social my-ul">
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a></li>
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a></li>
+            </ul>
+
+            <div class="address-company">
+              <p>Производство мебели:</p>
+              <p>442530, г. Кузнецк, Пензенская область, Московское шоссе 19г</p>
+            </div>
+
+            <a href="tel:+78005009023" class="phone-company">8 800 500 90 23</a>
+
+            <div class="callback-phones">
+              <p>Заказ звонка:</p>
+
+              <form method="post" class="form form-call">
+                <label><input type="text" name="phone" placeholder="+7 (___) ___ - __ - __"></label>
+                <button type="submit" class="btn btn-md btn-accent">Перезвонить</button>
+
+                <div class="consent">
+                  Нажимая кнопку «Перезвонить», я даю свое <a href="#" class="d-inline text-decoration" target="_blank">согласие
+                  на обработку моих персональных данных</a>, в соответствии с политикой конфиденциальности
+                </div>
+              </form>
+            </div>
+
+            <a href="mailto:info@shkafi-stoiki.com" class="mail-company">info@shkafi-stoiki.com</a>
+          </div>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="container">
         <div class="row">
-
+          <div class="col-12 col-md-8">
+            <div class="copyright">
+              <p><strong>© 2018-2021 “Элна Мебель”</strong></p>
+              <p>Все права защищены. Все предложения на сайте не являются публичной офертой, носят информационный
+                характер и нуждаются в подтверждении по телефону.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="#" target="_blank" class="developer">
+              <span>Разработка сайта</span>
+              <img src="img/Itj.svg" alt="">
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </footer>
   <!--### FOOTER END ###-->
+
+</div>
+
+
+<!-- Модальное окно -->
+<div class="modal fade" id="callbackModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Оставить заявку</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close2"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form form-callback">
+          <label>
+            <span class="input-title">Как вас зовут?</span>
+            <input type="text" name="name" value="Александр Валерьевич">
+          </label>
+
+          <label>
+            <span class="input-title">Телефон</span>
+            <input type="text" name="phone" placeholder="+7 (___) - ___ - __">
+          </label>
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-lg btn-accent">Оставить заявку</button>
+            <div class="consent">Нажимая кнопку, я даю свое согласие на обработку моих персональных данных,
+              в соответствии с политикой конфиденциальности
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="thanksModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="check-icon"><img src="img/check-icon.svg" alt=""></div>
+        <h3 class="text-center">Заявка успешно принята.</h3>
+
+        <div class="box-text text-center">
+          <p>Спасибо за оставленную заявку. Наш менеджер свяжется с Вами в ближайшее время</p>
+        </div>
+
+        <div class="timer-modal">
+          <p>Окно закроется через 5 секунд. <a href="#" class="d-inline text-decoration" data-dismiss="modal">Закрыть
+            окно</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
 
 
 <script src="js/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
@@ -413,6 +2528,9 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"
     integrity="sha512-2hIlk2fL+NNHkULe9gGdma/T5vSYk80U5tvAFSy3dGEl8XD4h2i6frQvHv5B+bm/Itmi8nJ6krAcj5FWFcBGig=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
+        integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/common.js"></script>
 
 </body>

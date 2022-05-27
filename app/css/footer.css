@@ -1,4 +1,183 @@
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
+/*==========  footer  ==========*/
+footer {
+  padding: 100px 0;
+  color: #fff;
+  background: #3A3B3F; }
+  footer .logo {
+    max-width: 122px; }
+  footer .list-social {
+    margin: 20px 0; }
+    footer .list-social li {
+      margin: 0 10px 0 0; }
+      footer .list-social li:last-child {
+        margin: 0; }
+      footer .list-social li a {
+        background: #8D8D91;
+        fill: #fff;
+        width: 52px;
+        height: 52px; }
+
+.footer-top {
+  padding: 0 0 50px;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 500; }
+
+.phone-company {
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  margin: 20px 0; }
+  .phone-company:hover {
+    color: #A81815; }
+
+.mail-company {
+  color: #fff; }
+  .mail-company:hover {
+    color: #A81815; }
+
+.callback-phones {
+  margin: 0 0 20px;
+  max-width: 282px;
+  width: 100%; }
+  .callback-phones p {
+    margin: 0 0 10px; }
+
+.form-call input {
+  background: transparent;
+  border: 1px solid #fff;
+  text-align: center;
+  height: 44px;
+  color: #FFFFFF; }
+  .form-call input::-webkit-input-placeholder {
+    color: #FFFFFF; }
+  .form-call input::-moz-placeholder {
+    color: #FFFFFF; }
+  .form-call input::-ms-input-placeholder {
+    color: #FFFFFF; }
+  .form-call input::placeholder {
+    color: #FFFFFF; }
+
+.form-call button {
+  margin: 10px 0; }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 50px 0 0; }
+
+.copyright {
+  font-size: 14px;
+  line-height: 160%; }
+  .copyright p {
+    margin: 0 0 6px; }
+    .copyright p:last-child {
+      margin: 0; }
+  .copyright strong {
+    font-weight: 500; }
+
+.developer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 0 auto; }
+  .developer span {
+    display: inline-block;
+    margin: 0 10px 0 0; }
+  .developer:hover {
+    color: #A81815; }
+
+/*==========  footer end  ==========*/
+/*==========  section modal ==========*/
+.modal-dialog {
+  max-width: 739px; }
+
+.modal-content {
+  border: none;
+    border-radius: 0;
+  background: #fff;
+  padding: 50px; }
+
+.modal-body {
+  font-size: 14px;
+  padding: 0; }
+  .modal-body h3 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 100%; }
+
+.modal-header {
+  padding: 0;
+  border: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 50px; }
+  .modal-header .close {
+    position: relative;
+    padding: 0;
+    z-index: 1;
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    fill: #272727;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    text-shadow: none; }
+    .modal-header .close:hover {
+      opacity: 1;
+      fill: #A81815; }
+
+.modal-title {
+  font-size: 48px; }
+
+.check-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto 50px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#DE2C29), to(#DE2C29)), #A81815;
+  background: linear-gradient(0deg, #DE2C29, #DE2C29), #A81815;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%; }
+
+#thanksModal .modal-dialog {
+  max-width: 588px; }
+
+#thanksModal .box-text {
+  max-width: 428px;
+  margin: 50px auto;
+  font-size: 16px;
+  font-weight: 500; }
+
+.timer-modal {
+  text-align: center;
+  color: #8D8D91;
+  font-weight: 500; }
+  .timer-modal a {
+    color: #8D8D91; }
+
+/*==========  section modal end ==========*/
