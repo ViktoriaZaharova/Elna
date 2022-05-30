@@ -43,7 +43,7 @@ $('.btn-add-favorite').on('click', function (e) {
 
 $(document).ready(function () {
 
-    $(".menu-navigation__item").hover(function () {
+    $(".menu-navigation__item.js-tab-trigger").hover(function () {
         let id = $(this).attr('data-tab'),
             content = $('.js-tab-content[data-tab="' + id + '"]');
 
@@ -84,3 +84,13 @@ $(document).ready(function () {
 
 
 $('[name="phone"]').mask('+7 (999) 999 - 99 - 99');
+
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 150) {
+        $('.header-top').addClass('fixed');
+    } else {
+        $('.header-top').removeClass('fixed');
+    }
+});
+

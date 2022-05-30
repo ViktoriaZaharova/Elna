@@ -5,6 +5,7 @@ header
   padding-top: 56px
   font-size: 14px
 
+
 .header-top
   position: fixed
   z-index: 3
@@ -13,6 +14,64 @@ header
   width: 100%
   background: $grey
   color: #fff
+  .container-fluid
+    padding: 0 30px
+  .logo
+    max-width: 130px
+    width: 100%
+    margin: 0 30px 0 0
+    display: none
+    img
+      width: 100%
+  .navigation-user
+    font-size: 14px
+    font-weight: 500
+    margin: 0 0 0 30px
+    display: none
+    li
+      border: none
+        left: 1px solid rgba(#fff, .1)
+      &:first-child
+        border: none
+          left: 1px solid rgba(#fff, .1)
+    a
+      padding: 18px 30px
+      color: #fff
+      &:first-child
+        padding: 18px 30px
+  .navigation-user-links__icon
+    fill: #fff
+    img
+      filter: brightness(0) invert(1)
+  .navigation-user-links__icon.fill-none
+    stroke: #fff
+  .user-links .navigation-user-links__icon
+    margin: 0
+  .navigation-user-links
+    position: relative
+    &__text
+      position: absolute
+      right: 5px
+      top: 11px
+      min-width: 20px
+
+  &.fixed
+    .container-fluid
+      padding: 0 0 0 20px
+    .navigation-user
+      display: flex
+    .logo
+      display: flex
+
+.btn-search
+  fill: none
+  stroke: #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  .svg-icon
+    width: 24px
+    height: 24px
 
 .location-item
   display: flex
@@ -93,6 +152,8 @@ header
 
 .header-bottom
   padding: 30px 40px
+  .container-fluid
+    padding: 0
 
 .logo
   max-width: 186px
@@ -175,6 +236,7 @@ header
 .user-links
   .navigation-user-links__icon
     margin: 0 20px 0 0
+
 
 /*==========  header end  ==========*/
 
@@ -264,6 +326,13 @@ header
       margin: 0 auto 10px
       fill: none
       stroke: $black
+    &.active
+      background: #fff
+      color: $accent
+      &:before
+        opacity: 1
+      .menu-navigation__links-icon
+        stroke: $accent
     &:hover
       background: #fff
       color: $accent
@@ -323,11 +392,12 @@ header
     align-items: flex-start
     flex-direction: column
     justify-content: flex-start
-    padding: 0 60px 0
+    padding: 50px 60px
   &__title
     margin: 40px 0
     color: #1E1E1E
     font-size: 32px
+
 
 
 .menu-navigation-submenu
@@ -385,6 +455,7 @@ header
   position: relative
   display: flex
   align-items: stretch
+
   .js-tab-trigger.active
     a
       &:after
