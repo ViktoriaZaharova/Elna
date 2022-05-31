@@ -23,6 +23,20 @@ $('.partners-slider').slick({
     autoplaySpeed: 2000,
 });
 
+// slick active
+$(window).on('load resize', function() {
+    if ($(window).width() < 1024) {
+        $('.useful-publications-slider:not(.slick-initialized)').slick({
+            infinite: true,
+            arrows: false,
+            slidesToShow: 3,
+        });
+    } else {
+        $(".useful-publications-slider.slick-initialized").slick("unslick");
+    }
+});
+// slick active
+
 
 $(window).on("load", function () {
     $(".mCustomScrollbar-wrap").mCustomScrollbar({

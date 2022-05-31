@@ -154,6 +154,9 @@ button, .btn
   fill: none
   stroke: #fff
 
+.btn-text-tablet
+  display: none
+
 .btn-border
   border: 1px solid #CBCBCB
   color: $black
@@ -459,9 +462,11 @@ h2
   margin: 0 auto
 
   input
+    font-size: 16px
     height: 51px
     background: #F6F6F6
-
+    &::placeholder
+      color: #8D8D91
   button
     position: absolute
     top: 50%
@@ -632,6 +637,7 @@ h2
     width: 100%
     color: #272727
     position: relative
+    margin-bottom: 0
     &:before
       content: ''
       position: absolute
@@ -773,3 +779,19 @@ h2
   line-height: 15px
   a
     color: inherit
+
+
+.tab-content > .tab-pane, .pill-content > .pill-pane
+  display: block
+
+  /* undo display:none
+  height: 0
+
+  /* height:0 is also invisible
+  overflow: hidden
+
+/* no-overflow
+
+.tab-content > .active, .pill-content > .active
+  height: auto
+

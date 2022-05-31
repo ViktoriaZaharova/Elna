@@ -280,7 +280,8 @@
     z-index: 2;
     padding: 20px 50px 50px; }
   .advantages-program-box h3 {
-    font-size: 32px; }
+    font-size: 32px;
+    line-height: 100%; }
   .advantages-program-box .box-text {
     margin: 20px 0;
     font-size: 14px;
@@ -498,9 +499,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-shadow: 0px 30px 80px -20px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 30px 80px -20px rgba(0, 0, 0, 0.05);
-  background: -webkit-gradient(linear, left bottom, left top, from(#919296), to(#919296)), #939393;
-  background: linear-gradient(0deg, #919296, #919296), #939393; }
+          box-shadow: 0px 30px 80px -20px rgba(0, 0, 0, 0.05); }
 
 .services-box {
   -webkit-box-flex: 1;
@@ -512,7 +511,9 @@
   color: #fff;
   padding: 40px;
   font-size: 14px;
-  font-weight: 500; }
+  font-weight: 500;
+  background: -webkit-gradient(linear, left bottom, left top, from(#919296), to(#919296)), #939393;
+  background: linear-gradient(0deg, #919296, #919296), #939393; }
   .services-box:before {
     content: '';
     position: absolute;

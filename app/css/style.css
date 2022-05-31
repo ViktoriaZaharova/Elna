@@ -170,6 +170,9 @@ button, .btn {
   fill: none;
   stroke: #fff; }
 
+.btn-text-tablet {
+  display: none; }
+
 .btn-border {
   border: 1px solid #CBCBCB;
   color: #272727; }
@@ -481,8 +484,17 @@ h2 {
   position: relative;
   margin: 0 auto; }
   .form-search input {
+    font-size: 16px;
     height: 51px;
     background: #F6F6F6; }
+    .form-search input::-webkit-input-placeholder {
+      color: #8D8D91; }
+    .form-search input::-moz-placeholder {
+      color: #8D8D91; }
+    .form-search input::-ms-input-placeholder {
+      color: #8D8D91; }
+    .form-search input::placeholder {
+      color: #8D8D91; }
   .form-search button {
     position: absolute;
     top: 50%;
@@ -686,7 +698,8 @@ h2 {
     text-align: center;
     width: 100%;
     color: #272727;
-    position: relative; }
+    position: relative;
+    margin-bottom: 0; }
     .nav-tabs .nav-link:before {
       content: '';
       position: absolute;
@@ -867,3 +880,14 @@ h2 {
   line-height: 15px; }
   .consent a {
     color: inherit; }
+
+.tab-content > .tab-pane, .pill-content > .pill-pane {
+  display: block;
+  /* undo display:none */
+  height: 0;
+  /* height:0 is also invisible */
+  overflow: hidden; }
+
+/* no-overflow */
+.tab-content > .active, .pill-content > .active {
+  height: auto; }
