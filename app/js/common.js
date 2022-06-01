@@ -4,7 +4,17 @@ $('.home-slider').slick({
     fade: true,
     dots: true,
     prevArrow: '<button type="button" class="slick-prev"></button>',
-    nextArrow: '<button type="button" class="slick-next"></button>'
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            }
+        }
+    ]
 });
 
 $('.about-slider').slick({
@@ -12,7 +22,17 @@ $('.about-slider').slick({
     fade: true,
     dots: true,
     prevArrow: '<button type="button" class="slick-prev"></button>',
-    nextArrow: '<button type="button" class="slick-next"></button>'
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            }
+        }
+    ]
 });
 
 $('.partners-slider').slick({

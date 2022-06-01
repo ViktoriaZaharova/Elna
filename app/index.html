@@ -20,12 +20,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
         integrity="sha512-6qkvBbDyl5TDJtNJiC8foyEVuB6gxMBkrKy67XpqnIDxyvLLPJzmTjAj1dRJfNdmXWqD10VbJoeN4pOQqDwvRA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -102,10 +102,11 @@
 
             <a href="#" class="btn btn-accent">Стать партнером</a>
 
+
             <div class="dropdown dropdown-contacts">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <span class="dropdown-toggle__phone">8 (800) 222 81 01</span>
-                <span>Еще</span>
+                <span class="d-none d-lg-block">Еще</span>
               </a>
               <div class="dropdown-menu">
                 <div class="contacts-item">
@@ -120,6 +121,17 @@
                   <p>E-mail</p>
                   <a href="mailto:info@elna-mebel.com" class="contacts-item__links">info@elna-mebel.com</a>
                 </div>
+              </div>
+            </div>
+
+            <div class="dropdown dropdown-contacts dropdown-contacts-mobile d-block d-lg-none">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span>Связаться</span>
+              </a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a>
+
+                <a href="#" class="dropdown-item">Контакты</a>
               </div>
             </div>
 
@@ -141,9 +153,9 @@
               </a></li>
             </ul>
 
-            <a href="#" class="links-white mr-25" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a>
+            <a href="#" class="links-white mr-25 d-none d-lg-block" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a>
 
-            <a href="#" class="links-white">Контакты</a>
+            <a href="#" class="links-white d-none d-lg-block">Контакты</a>
 
             <ul class="navigation-user my-ul">
               <li>
@@ -2119,7 +2131,7 @@
   <div class="about">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-sm-6">
           <div class="about-content">
             <a href="index.html" class="logo-company"><img src="img/logo.svg" alt=""></a>
             <div class="description-company">
@@ -2133,7 +2145,7 @@
             <a href="#" class="btn btn-md btn-border">Подробнее о нас</a>
           </div>
         </div>
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-sm-6">
           <div class="about-slider">
             <div class="slide">
               <div class="video-box">
@@ -2272,11 +2284,11 @@
   <section class="reviews p-100">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-sm-8">
           <h2>Отзывы наших клиентов</h2>
         </div>
 
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-sm-4">
           <a href="#" class="btn btn-md btn-white btn-add-reviews ml-auto">
             <span class="btn-text">Оставить отзыв |</span>
             <span class="btn-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#pencil"></use></svg></span>
@@ -2307,9 +2319,11 @@
                         5+++. У меня одни положительные эмоции от ихней продукции!</p>
                     </div>
                   </div>
+
+                  <a href="#" class="btn btn-grey d-flex d-md-none" data-toggle="modal" data-target="#reviewsModal">Отзыв целиком</a>
                 </div>
                 <div class="answer-box">
-                  <a href="#" class="btn-view">
+                  <a href="#" class="btn-view" data-toggle="modal" data-target="#reviewsModal">
                     <svg class="svg-icon">
                       <use xlink:href="img/sprite.svg#view"></use>
                     </svg>
@@ -2346,7 +2360,7 @@
                   </div>
                 </div>
                 <div class="answer-box">
-                  <a href="#" class="btn-view">
+                  <a href="#" class="btn-view" data-toggle="modal" data-target="#reviewsModal">
                     <svg class="svg-icon">
                       <use xlink:href="img/sprite.svg#view"></use>
                     </svg>
@@ -2387,7 +2401,7 @@
                   </div>
                 </div>
                 <div class="answer-box">
-                  <a href="#" class="btn-view">
+                  <a href="#" class="btn-view" data-toggle="modal" data-target="#reviewsModal">
                     <svg class="svg-icon">
                       <use xlink:href="img/sprite.svg#view"></use>
                     </svg>
@@ -2425,7 +2439,7 @@
                   </div>
                 </div>
                 <div class="answer-box">
-                  <a href="#" class="btn-view">
+                  <a href="#" class="btn-view" data-toggle="modal" data-target="#reviewsModal">
                     <svg class="svg-icon">
                       <use xlink:href="img/sprite.svg#view"></use>
                     </svg>
@@ -2462,7 +2476,7 @@
                   </div>
                 </div>
                 <div class="answer-box">
-                  <a href="#" class="btn-view">
+                  <a href="#" class="btn-view" data-toggle="modal" data-target="#reviewsModal">
                     <svg class="svg-icon">
                       <use xlink:href="img/sprite.svg#view"></use>
                     </svg>
@@ -2501,7 +2515,7 @@
                   </div>
                 </div>
                 <div class="answer-box">
-                  <a href="#" class="btn-view">
+                  <a href="#" class="btn-view" data-toggle="modal" data-target="#reviewsModal">
                     <svg class="svg-icon">
                       <use xlink:href="img/sprite.svg#view"></use>
                     </svg>
@@ -2679,10 +2693,13 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
+        integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script
     src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"
