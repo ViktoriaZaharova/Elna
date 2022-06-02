@@ -121,6 +121,8 @@ header {
       color: #fff; }
       .menu li > a:hover {
         color: #A81815; }
+      .menu li > a.location-item {
+        padding: 0; }
   .menu .dropdown-information {
     display: none; }
 
@@ -280,6 +282,24 @@ header {
 .user-links .dropdown-toggle:after {
   margin-left: 0; }
 
+.phone-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background: #3A3B3F;
+  stroke: #FFFFFF;
+  fill: none;
+  padding: 10px; }
+
 /*==========  header end  ==========*/
 /*==========  fixed menu  ==========*/
 .overlay-bg {
@@ -336,6 +356,31 @@ header {
       border: none;
         border-bottom: 6px solid;
         border-left: 6px solid transparent; }
+    .menu-navigation__item-mob {
+      display: none; }
+      .menu-navigation__item-mob .sale-icon {
+        max-width: 16px;
+        right: -20px;
+        top: 0; }
+      .menu-navigation__item-mob .fill-none {
+        stroke: none;
+        fill: #272727; }
+      .menu-navigation__item-mob .menu-navigation__links:hover .fill-none {
+        fill: #A81815;
+        stroke: none; }
+      .menu-navigation__item-mob .menu-navigation__links .menu-navigation__links-icon {
+        position: relative;
+        width: 24px;
+        height: 24px; }
+        .menu-navigation__item-mob .menu-navigation__links .menu-navigation__links-icon img {
+          width: 100%;
+          max-height: 100%; }
+      .menu-navigation__item-mob .menu-navigation__links.active .menu-navigation__links-icon {
+        stroke: #A81815;
+        fill: none; }
+      .menu-navigation__item-mob .menu-navigation__links.active .fill-none {
+        fill: #A81815;
+        stroke: none; }
   .menu-navigation__links {
     height: 100%;
     width: 100%;
@@ -403,11 +448,73 @@ header {
         opacity: 1; }
       .menu-navigation__links:hover .menu-navigation__links-icon {
         stroke: #A81815; }
-  .menu-navigation .dropdown.show .dropdown-toggle:before {
-    width: 2px;
-    opacity: 1; }
-  .menu-navigation .dropdown.show .dropdown-toggle .menu-navigation__links-icon {
-    stroke: #A81815; }
+
+.dropdown-submenu-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #272727; }
+  .dropdown-submenu-prev__icon {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    stroke: #272727;
+    fill: none;
+    margin: 0 10px 0 0;
+    width: 24px;
+    height: 24px;
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .dropdown-submenu-prev:hover {
+    color: inherit; }
+
+.sale-icon {
+  position: absolute;
+  top: 8px;
+  right: 9px;
+  max-width: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.basket-value {
+  position: absolute;
+  right: -20px;
+  top: 0;
+  color: #fff;
+  background: -webkit-gradient(linear, left bottom, left top, from(#DE2C29), to(#DE2C29)), #A81815;
+  background: linear-gradient(0deg, #DE2C29, #DE2C29), #A81815;
+  width: 16px;
+  height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 8px;
+  font-weight: 600;
+  border-radius: 50%; }
 
 .js-tab-trigger.active > a {
   background: #fff;

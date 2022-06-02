@@ -22,17 +22,20 @@
   .header-top.fixed
     .menu
       margin: 0 auto 0 0
+
       li
         margin: 0
 
   .about-slider
     min-width: 725px
+
     .video-box
       min-width: 725px
 
 @media only screen and (max-width: 1750px)
   .header-bottom .form-search
     max-width: 324px
+
     input
       height: 50px
 
@@ -45,11 +48,15 @@
   .header-top.fixed
     .menu li > a
       padding: 19.38px 12px
+
     .mr-25
       margin-right: 15px
 
     .list-messenger
       margin: 0 15px
+
+  .header-top.fixed .menu li > a.location-item
+    padding: 0
 
   .user-links .navigation-user-links__icon
     margin: 0 15px 0 0
@@ -86,11 +93,21 @@
     &__photo
       height: 239px
 
+  .views-products-slider
+    .slick-arrow
+      top: 71px
+    .product-card__photo
+      height: 194px
+
+  .breadcrumbs
+    border-bottom: 1px solid #E6E6E6
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1520px)
   .header-top.fixed
     .navigation-user
       display: none
+
     .container-fluid
       padding: 0 30px
 
@@ -99,11 +116,13 @@
 
   .menu li
     margin: 0 0 0 10px
+
     > a
       padding: 19.38px 15px
 
   .dropdown-contacts
     margin: 0 10px
+
     .dropdown-toggle
       padding: 19.38px 10px
 
@@ -121,8 +140,10 @@
 
   .company-experience
     font-size: 12px
+
     &__text
       max-width: 108px
+
     &__logo
       max-width: 62px
 
@@ -131,6 +152,7 @@
 
   .about-slider
     min-width: 620px
+
     .video-box
       min-width: 620px
 
@@ -153,9 +175,9 @@
 
   .header-bottom .form-search
     max-width: 256px
+
     input
       font-size: 12px
-
 
 
   .fixed-navigation
@@ -176,6 +198,7 @@
   .home-slider
     &__item
       min-height: 643px
+
     .slick-dots
       bottom: 82px
 
@@ -184,6 +207,7 @@
 
   .basket-links__value
     font-weight: normal
+
     &:before
       margin: 0 5px
 
@@ -205,12 +229,16 @@
   .product-card
     &__body
       padding: 15px 0 0
+
     &__name
       font-size: 14px
+
     &__photo
       height: 200px
+
     &__price
       flex-wrap: wrap
+
     .price-description
       order: -1
       margin: 0 0 5px
@@ -226,11 +254,14 @@
   .advantages-program-box
     h3
       font-size: 24px
+
     &__body
       padding: 20px 30px
+
     &__img
       padding: 0 30px
       height: 203px
+
     .box-text
       font-size: 12px
 
@@ -243,6 +274,7 @@
 
   .date
     font-size: 12px
+    line-height: 120%
 
   .answer-box__head p
     font-size: 16px
@@ -253,6 +285,10 @@
   .form-callback button
     height: 50px
 
+  .breadcrumbs
+    border: none
+      top: 1px solid #E6E6E6
+
 @media only screen and (max-width: 1320px)
   .menu li, .dropdown-contacts, .location-item
     margin: 0
@@ -260,6 +296,7 @@
   .menu
     li
       display: none
+
     .dropdown-information, .dropdown-location
       display: flex
 
@@ -281,20 +318,25 @@
   .menu-navigation
     flex-direction: row
     align-items: stretch
+
     &__item
       &:last-child
         .menu-navigation__links
           border: none
+
     &__links
       background: #fff
       border:
         bottom: 1px solid #F6F6F6
         right: 1px solid #F6F6F6
+
       &:before
         display: none
+
       &.active
         border-bottom-color: $accent
         color: $black
+
         .menu-navigation__links-icon
           stroke: $black
 
@@ -320,6 +362,7 @@
   .dropdown-submenu__title
     font-size: 24px
     margin: 0 0 20px
+
     br
       display: none
 
@@ -356,32 +399,41 @@
 
   .navigation-user
     margin: 0 0 0 auto
+
     li:first-child
       display: flex
+
       .btn-search
         stroke: #272727
 
   .menu-navigation
     &__links
       padding: 17px 10px
+
       &-icon
         margin: 0 auto 5px
 
   .menu
     font-size: 10px
+
     .dropdown-location
       font-size: 12px
+
       .dropdown-toggle
         padding: 12.5px 10px 12px 5px
+
     li > a
       padding: 12.5px 10px
+
     .location-item__text
       display: none
+
     .location-item__icon
       margin: 0
 
   .dropdown-contacts
     margin: 0 10px
+
     .dropdown-toggle
       padding: 12.5px 10px
 
@@ -395,6 +447,7 @@
 
   .contacts-item
     margin: 0 0 15px
+
     &__links
       font-size: 18px
 
@@ -404,6 +457,7 @@
   .about-slider
     min-width: auto
     width: calc(100% + 70px)
+
     .video-box
       min-width: auto
 
@@ -418,17 +472,23 @@
     flex: auto
     width: 33.3%
     margin: 0 0 1px
+
     &:nth-child(3)
       border: none
 
   .reviews-card-col
     display: none
     width: 50%
+
     &:nth-child(-n+4)
       display: block
 
   .phone-company
     font-size: 22px
+
+  .views-products-slider
+    .product-card__photo
+      height: 155px
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1024px)
@@ -441,10 +501,13 @@
   .home-slider
     &__title
       font-size: 48px
+
     &__text
       font-size: 24px
+
     &__item
       min-height: 448px
+
     .slick-dots
       bottom: 66px
 
@@ -458,6 +521,7 @@
   .advantages-category-item
     padding: 20px 35px
     font-size: 12px
+
     .btn
       height: 37px
       font-size: 12px
@@ -468,7 +532,7 @@
   .btn-text-pc
     display: none
 
-  h2
+  h1, h2
     font-size: 40px
 
   .serial-furniture-box
@@ -481,17 +545,20 @@
   .product-card
     &__photo
       height: 204px
+
     &__name
       font-size: 12px
 
   .btn-column
     font-size: 12px
+
     &__icon
       margin: 0 auto 10px
 
   .advantages-program-box
     &__body
       padding: 20px 30px 30px
+
     .btn
       font-size: 12px
 
@@ -503,13 +570,18 @@
     &__title
       font-size: 16px
       line-height: normal
+
     .box-text
       font-size: 12px
 
   .useful-publications-slider
     margin: 0
+
     .slick-list
       margin: 0 -5px
+
+  .serial-furniture-box__icon
+    margin: 0 auto 20px
 
 
 /* Medium Devices, Desktops */
@@ -519,23 +591,30 @@
 
   .header-top
     padding: 15.5px 0
+
     .container-fluid
       padding: 0 20px 0 30px
+
     .list-messenger
       display: none
+
     .btn
       height: 29px
       font-size: 14px
 
   .dropdown-contacts
     margin: 0 0 0 10px
+
     .dropdown-menu
       min-width: 250px
       max-width: 250px
+
     .dropdown-toggle
       padding: 6.5px 10px
+
       &:after
         display: none
+
     .dropdown-toggle__phone
       margin: 0
 
@@ -547,8 +626,10 @@
   .menu
     li
       margin: 0 0 0 10px
+
       > a
         padding: 6.5px 10px
+
     .dropdown-location
       .dropdown-toggle
         padding: 6.5px 10px
@@ -567,6 +648,7 @@
 
   .header-top.fixed .menu li
     margin: 0 0 0 10px
+
     &:first-child
       margin: 0
 
@@ -585,7 +667,7 @@
 
   .form-search button
     right: 10px
-    
+
   .dropdown-item
     padding: 5px 10px
     text-align: left
@@ -621,6 +703,7 @@
   .tab-content
     .product-card
       display: none
+
       &:nth-child(-n+6)
         display: block
 
@@ -640,12 +723,17 @@
   .logo-company
     max-width: 184px
 
+  .serial-furniture-page .serial-furniture-box
+    width: calc(25% - 7px)
+
 @media only screen and (max-width: 768px)
   .list-social-column
     flex-direction: row
     align-items: flex-start
+
     li
       margin: 0 10px 0 0
+
       &:last-child
         margin: 0
 
@@ -657,8 +745,10 @@
   .home-slider
     &__item
       min-height: 508px
+
     &__text
       font-size: 20px
+
     .slick-dots
       bottom: 30px
 
@@ -680,22 +770,27 @@
     align-items: center
     display: flex
     font-size: 12px
+
     &__icon
       order: 1
       width: 95px
       min-width: 95px
       height: 95px
       margin: 0 0 0 17px
+
     &:last-child
       border: none
       padding: 0 0 0 20px
       margin: 0
+
     &:nth-child(2)
       padding: 0 0 30px 20px
+
     &:nth-child(3)
       margin: 0
       padding: 0 20px 0 0
       border: none
+
     .btn
       margin: 15px 0 0
 
@@ -712,7 +807,7 @@
     margin: 50px 0
 
 
-  h2
+  h1, h2
     font-size: 32px
 
   .serial-furniture-box
@@ -720,6 +815,7 @@
     padding: 20px
     font-size: 12px
     flex: none
+
     &__icon
       margin: 0 auto 20px
 
@@ -736,6 +832,7 @@
 
   .btn-group-list
     padding: 30px 0 0
+
     &.mt-40
       margin-top: 20px
 
@@ -745,10 +842,13 @@
   .advantages-program-box
     h3
       font-size: 18px
+
     &__body
       padding: 10px 20px
+
     .btn
       height: 37px
+
     &__img
       padding: 0 20px
       margin: -60px 0 0
@@ -756,6 +856,7 @@
 
   .ideas-interior
     margin: 100px 0
+
     h2
       margin: 0 0 30px
 
@@ -769,8 +870,10 @@
   .useful-publications-box
     &__body
       padding: 30px 20px 0 0
+
     &__title
       font-size: 14px
+
     &__category
       font-size: 12px
       line-height: normal
@@ -791,6 +894,7 @@
 
   footer
     padding: 50px 0
+
     .list-social
       li
         a
@@ -815,6 +919,7 @@
     width: 100%
     height: 37px
     display: flex
+    position: relative
     background: #E6E6E6
     border-radius: 0
     text-align: center
@@ -824,17 +929,30 @@
     color: #272727
     top: auto
     bottom: 0
+    left: 0
+    transform: none
 
     &:hover
       background: $accent
       color: #fff
+
     &__text
       display: block
+
     .svg-icon
       display: none
 
   .answer-box
-    padding: 30px 30px 40px
+    padding: 30px 0 0
+
+    &:before
+      bottom: 37px
+
+    &__head
+      padding: 0 20px
+
+    &__body
+      padding: 0 20px 30px
 
   .modal-title
     font-size: 32px
@@ -855,12 +973,658 @@
     width: 28px
     height: 28px
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 576px)
-  /**/
+  .btn-border:after
+    border-left-width: 4px
+    border-bottom-width: 4px
+    border-top-width: 4px
+    margin-left: 12px
 
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 740px)
+  .dropdown-contacts
+    margin: 0
+
+  .header-top .btn
+    font-size: 12px
+
+  .header-top .container-fluid
+    padding: 0 10px 0 20px
+
+  .header-top.fixed .container-fluid
+    padding: 0 10px 0 20px
+
+  .dropdown-submenu__title
+    max-width: 220px
+
+  .menu-navigation-submenu__icon
+    width: 32px
+    height: 32px
+
+  .advantages-box
+    width: 50%
+    flex: none
+    border:
+      bottom: 1px solid rgba(#fff, .1)
+
+    &:nth-child(even)
+      border-right: none
+
+  .views-products-slider
+    .product-card__photo
+      height: 129px
+
+@media only screen and (max-width: 680px)
+  .menu .dropdown-location .dropdown-toggle
+    display: none
+
+  .menu .dropdown-location
+    width: 36px
+    height: 36px
+    background: #E6E6E6
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+
+    .location-item__icon
+      stroke: $black
+
+  .dropdown-submenu__wrapper
+    padding: 30px 20px
+
+  .menu-navigation-submenu
+    font-size: 14px
+
+  .btn-close-submenu
+    right: 0
+
+  .dropdown-submenu
+    min-width: 280px
+
+  .navigation-user li a
+    padding: 0 10px
+
+  .header-top
+    padding: 12px 0
+
+  .description-company
+    margin: 0 14px 0 20px
+
+  .header-bottom
+    padding: 20px 26px
+
+  .reviews-card
+    &__wrapper
+      padding: 20px 20px 0
+
+    &__photo
+      width: 40px
+      height: 40px
+      font-size: 14px
+
+    .name-user
+      font-size: 14px
+
+    .box-text
+      font-size: 12px
+      line-height: 140%
+
+    &__body
+      height: 150px
+
+  .answer-box
+    &__head
+      padding: 0 20px 0
+
+    &__body
+      padding: 0 20px 30px
+
+
+@media only screen and (max-width: 575px)
+  .reviews-card
+    &__photo
+      width: 40px
+      height: 40px
+      font-size: 14px
+
+    .name-user
+      font-size: 14px
+
+    .box-text
+      font-size: 12px
+      line-height: 140%
+
+  .date
+    font-size: 12px
+
+  .answer-box
+    font-size: 12px
+
+    .box-text
+      font-size: 12px
+
+    &__head
+      p
+        font-size: 14px
+        margin: 0 10px 0 0
+
+  .modal-header
+    margin: 0 0 30px
+
+  .modal-title
+    font-size: 24px
+
+  .modal-dialog
+    max-width: none
+    width: 100%
+    margin: auto
+
+  .modal-content
+    padding: 30px 26px
+
+  .modal-header .close
+    width: 36px
+    height: 36px
+    background: linear-gradient(0deg, #DE2C29, #DE2C29), #A81815
+    border-radius: 50%
+    stroke: #fff
+    padding: 10px
+
+  .consent
+    max-width: none
+    text-align: center
+
+
+  .form-callback button
+    width: 100%
+    margin: 0 auto 10px
+
+  header
+    padding: 0
+
+
+  .header-top
+    padding: 7px 0
+    background: #fff
+    position: relative
+    z-index: 1
+
+    .form-search
+      width: calc(100% - 36px - 36px - 20px)
+      margin: 0 auto
+
+      input
+        background: #F6F6F6
+        height: 36px
+        padding: 0 36px 0 20px
+        font-size: 12px
+        font-weight: 500
+        color: #272727
+        border-radius: 59px
+
+        &::placeholder
+          color: #272727
+
+      button
+        width: 16px
+        height: 16px
+        right: 20px
+
+  .menu .dropdown-information
+    display: none
+
+  .logo
+    max-width: 140px
+
+  .header-bottom
+    padding: 5px 26px 20px
+
+  .navigation-user
+    display: none
+
+  .company-experience__logo
+    max-width: 70px
+
+  .description-company
+    max-width: 120px
+    font-size: 12px
+    margin: 0 auto
+
+  .home-slider
+    &__item
+      min-height: 380px
+
+    &__title
+      font-size: 32px
+
+    &__text
+      font-size: 16px
+
+  .home .list-social
+    right: 20px
+    top: 20px
+
+  .advantages-box
+    padding: 20px
+
+    &:before
+      margin: 0 0 10px
+
+  .advantages-category-item
+    width: 100%
+    padding: 0 0 30px
+    margin: 0 0 30px
+
+    &:last-child
+      margin: 0
+      padding: 0
+      border: none
+
+    &:nth-child(even)
+      padding: 0 0 30px
+
+    &:nth-child(3)
+      padding: 0 0 30px
+      border-bottom: 1px solid #E6E6E6
+      margin: 0 0 30px
+
+  .serial-furniture-box
+    width: 50%
+    font-size: 12px
+    padding: 20px
+    margin: -0.5px
+
+    &__icon
+      height: 48px
+      margin: 0 auto 5px
+
+  h1, h2
+    margin: 0 0 30px
+
+  .nav-tabs
+    .nav-link
+      padding: 17.5px 7.5px
+      font-size: 14px
+
+  .all-interesting h2, .useful-publications h2, .ideas-interior h2
+    margin: 0 0 20px
+
+  .tab-content
+    padding: 20px 0 0
+
+  .product-card
+    margin: 0 0 20px
+    width: 50%
+
+    &__photo
+      height: 150px
+
+    &__info
+      font-size: 10px
+
+    &__name
+      font-size: 14px
+
+    .price
+      font-size: 24px
+      font-weight: normal
+
+  .btn-group-list
+    padding: 20px 0 0
+
+    li
+      &:after
+        margin: 0 10px
+
+    &.mt-40
+      margin-top: 10px
+
+  .btn-column
+    padding: 0 20px
+    font-size: 14px
+
+  .advantages-program
+    padding: 0
+
+  .advantages-program-box
+    width: 100%
+    margin: 0 0 60px
+    position: relative
+
+    &:last-child
+      margin: 0
+
+    &__img
+      position: absolute
+      top: -28px
+      right: 26px
+      margin: 0
+      height: 112px
+
+    &__body
+      padding: 30px 26px
+
+    h3
+      width: calc(100% - 105px)
+
+      br
+        display: none
+
+    .box-text
+      margin: 15px 0
+      font-size: 12px
+      max-width: 276px
+
+  .ideas-interior, .useful-publications
+    margin: 50px 0
+
+    .nav-tabs
+      overflow-x: auto
+      flex-wrap: nowrap
+
+      .nav-link
+        padding: 18px 25.5px
+        white-space: nowrap
+
+  .ideas-interior-box
+    height: 125px
+    width: 50%
+    display: none
+
+    &:nth-child(-n+4)
+      display: flex
+
+  .useful-publications-box
+    width: 278px
+
+    &__img
+      height: 200px
+
+    &__body
+      padding: 20px 20px 0 0
+
+  .about-slider
+    width: calc(100% + 30px)
+    margin: 0 -15px
+
+  .about-content
+    margin: 0 0 10px
+    padding: 50px 0 30px
+
+    .description-company
+      max-width: none
+      margin: 20px 0
+
+    .box-text
+      max-width: none
+
+    .btn
+      height: 37px
+      font-size: 12px
+
+  .logo-company
+    max-width: 249px
+
+  .btn-play
+    width: 77px
+    height: 77px
+
+  .partners-wrapper
+    padding: 30px 0
+
+  .partners-box
+    height: 36px
+
+  .partners-slider .slick-slide
+    margin: 0 20px 0 0
+
+  .services
+    margin: 50px 0
+
+  .services-box
+    width: 50%
+    text-align: center
+    padding: 20px 15px
+    border: 1px solid #fff
+    margin: -0.5px
+
+    &__icon
+      margin: 0 auto 5px
+      height: 48px
+      justify-content: center
+
+    &:last-child, &:nth-child(3)
+      border: 1px solid #fff
+
+  .form-call
+    .consent
+      text-align: left
+
+  .reviews
+    padding: 50px 0
+
+  .reviews-card-col
+    display: none
+    width: 100%
+
+    &:nth-child(-n+4)
+      display: none
+
+    &:first-child
+      display: block
+
+  .btn-add-reviews
+    margin: 0 0 30px !important
+
+  .copyright
+    font-size: 12px
+
+  .modal-body h3
+    font-size: 24px
+
+  .check-icon
+    margin: 0 auto 20px
+
+  #thanksModal .box-text
+    margin: 30px auto
+    font-size: 14px
+
+  .timer-modal
+    font-size: 12px
+
+  .fixed-navigation
+    position: fixed
+    left: 0
+    top: auto
+    bottom: 0
+    height: auto
+    background: #fff
+    border: none
+    backdrop-filter: blur(10px)
+    z-index: 5
+
+  .menu-navigation
+    height: auto
+
+  .wrapper
+    padding: 0 0 70px
+
+  .dropdown-submenu
+    min-width: auto
+    width: 100%
+
+  .js-tab-content
+    height: auto
+    border-bottom: 1px solid #E6E6E6
+
+  .dropdown-submenu__wrapper
+    padding: 30px 26px 5px
+
+  .dropdown-menu-right
+    top: auto
+    bottom: 0
+    padding: 0 0 71px
+
+  .btn-callback
+    width: 100%
+    height: 43px
+    margin: 30px 0
+
+  .btn-close-submenu
+    top: 30px
+    right: 26px
+    background: linear-gradient(0deg, #DE2C29, #DE2C29), #A81815
+    width: 36px
+    height: 36px
+    fill: #fff
+    padding: 10px
+
+  .dropdown-submenu__title
+    width: 100%
+    max-width: none
+    padding: 6px 36px 6px 0
+    display: flex
+    align-items: center
+    margin: 0 0 30px
+
+  .menu-navigation
+    z-index: 3
+
+    &__links
+      padding: 15px
+      border: none
+
+      &.active
+        color: $accent
+
+        .menu-navigation__links-icon
+          fill: $accent
+
+    &__item
+      display: none
+      flex: 1
+
+      &-mob
+        display: block
+
+  .contacts-item
+    margin: 0 0 20px
+
+    &__links
+      font-size: 24px
+
+  .list-messenger
+    margin: 0
+
+    li
+      margin: 0 10px 0 0
+
+      a
+        width: 31px
+        height: 31px
+        background: rgba(#272727, .1)
+        fill: #272727
+
+  .menu-navigation-submenu
+    width: 100%
+
+    li
+      min-height: auto
+      padding: 0
+      border-bottom: 1px solid #E6E6E6
+
+      &:last-child
+        border: none
+
+      a
+        width: 100%
+        padding: 15px 0
+        flex-direction: row
+        align-items: center
+        justify-content: flex-start
+        font-size: 14px
+        text-align: left
+
+        br
+          display: none
+
+    .menu-navigation__links-icon
+      margin: 0 10px 0 0
+      width: 32px
+      height: 32px
+
+    .menu-navigation__links.active .menu-navigation__links-icon
+      fill: none
+      stroke: $accent
+
+    .js-tab-trigger-mob
+      a
+        &:after
+          content: ''
+          display: flex
+          align-items: center
+          justify-content: center
+          margin: 0 0 0 auto
+          width: 16px
+          height: 16px
+          background: url("../img/arrow-right-black.svg") no-repeat center
+            size: 100%
+
+  .dropdown-submenu-prev__icon
+    display: flex
+
+  .serial-furniture-page .serial-furniture-box
+    width: calc(50% - 2px)
+    margin: 0 0 4px
+
+  .breadcrumbs
+    border: none
+    padding: 15px 0
+    .container-fluid
+      padding: 0 26px
+
+  .links-prev
+    display: flex
+
+  .breadcrumb-nav
+    display: none
+
+  .serial-furniture-page
+    margin: 30px 0
+
+  .advantages-program-v2
+    padding: 30px 0 50px 0
+
+  .advantages-v2
+    margin: 0
+
+  .views-products-slider .product-card
+    width: 159px
+
+  .views-products h3
+    margin: 0 0 30px
+
+  .views-products-slider .product-card__photo
+    height: 150px
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width: 320px)
-  /**/
+@media only screen and (max-width: 420px)
+  .description-company
+    max-width: 76px
+    font-size: 10px
+
+  .menu-navigation__links
+    font-size: 9px
+    padding: 15px 7px
+
+@media only screen and (max-width: 350px)
+  .logo
+    max-width: 110px
+
+  .company-experience__logo
+    max-width: 62px
+
+  .btn-column
+    padding: 0 15px
+
 

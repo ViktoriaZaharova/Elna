@@ -163,4 +163,67 @@ footer
   a
     color: #8D8D91
 
+.modal-content.active
+  box-shadow: inset 0px -77px 40px -66px rgba(0, 0, 0, 0.15)
+
+#reviewsModal
+  .reviews-card
+    &:before
+      display: none
+    &:hover
+      box-shadow: none
+    &__body
+      font-size: 12px
+      line-height: 140%
+    &.open
+
+      .reviews-card__body
+        max-height: none
+        overflow: visible
+  .reviews-card__wrapper
+    padding: 0 0 20px 0
+    &:before
+      display: none
+  .reviews-card__body
+    height: auto
+    max-height: 130px
+    overflow: hidden
+    padding: 0
+
+
+  .answer-box
+    padding: 20px 0 0
+    &:before
+      display: none
+  .answer-box__head
+    padding: 0
+  .answer-box__body
+    height: auto
+    overflow: visible
+    padding: 0 0 17px
+  .btn-view
+    position: relative
+    top: 0
+    left: 0
+    transform: none
+    order: 1
+    border-radius: 0
+    text-align: center
+    display: flex
+    width: 100%
+    height: auto
+    padding: 10px
+    background: #E6E6E6
+    color: #272727
+    font-size: 12px
+    font-weight: 500
+    margin: 20px 0 0
+    &:hover
+      background: $accent
+      color: #fff
+    .svg-icon
+      display: none
+    &__text
+      display: block
+
 /*==========  section modal end ==========*/

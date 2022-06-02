@@ -3,6 +3,7 @@
 /*==========  section home ==========*/
 .home
   position: relative
+
   .list-social
     top: 30px
     right: 30px
@@ -18,9 +19,11 @@
     height: 100%
     object-fit: cover
     z-index: -1
+
   .slide
     position: relative
     z-index: 1
+
     &:before
       content: ''
       position: absolute
@@ -30,6 +33,7 @@
       height: 100%
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))
       z-index: 1
+
   &__title
     text-transform: uppercase
     text-align: center
@@ -37,6 +41,7 @@
     font-size: 56px
     font-weight: 600
     margin: 0 auto 10px
+
   &__text
     text-align: center
     text-shadow: 0 12px 60px rgba(0, 0, 0, 0.5)
@@ -56,8 +61,10 @@
 
   .slick-dots
     bottom: 104px
+
     li
       box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.98)
+
   .btn
     margin: 30px auto 0
 
@@ -91,8 +98,10 @@
   line-height: 135%
   border:
     right: 1px solid rgba(#fff, .1)
+
   &:last-child
     border: none
+
   &:before
     content: ''
     margin: 0 0 20px
@@ -115,15 +124,19 @@
   padding: 30px 60px 20px
   border:
     right: 1px solid #E6E6E6
+
   &:last-child
     border: none
+
   &__icon
     margin: 0 0 30px
     display: flex
     align-items: center
     height: 128px
+
     img
       max-height: 100%
+
   .btn
     margin: 30px 0 0
 
@@ -139,7 +152,7 @@
   align-items: stretch
   flex-wrap: wrap
 
-.serial-furniture
+.serial-furniture.bg-light-grey
   h2
     color: #fff
 
@@ -156,6 +169,7 @@
   font-size: 14px
   font-weight: 500
   z-index: 1
+
   &__icon
     display: flex
     align-items: center
@@ -165,37 +179,46 @@
     height: 96px
     position: relative
     z-index: 2
+
     img
       max-height: 100%
+
     .img-hover
       display: none
+
   &:before
     content: ''
     position: absolute
     left: 50%
     top: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     width: calc(100% + 10px)
     height: calc(100% + 10px)
     transition: .3s ease
     opacity: 0
     background: linear-gradient(0deg, #DE2C29, #DE2C29), #A81815
     z-index: -1
+
   &__text
     position: relative
     z-index: 2
+
   &:hover
     color: #fff
     z-index: 2
     box-shadow: 0 50px 80px -50px rgba(0, 0, 0, 0.3)
+
     &:before
       opacity: 1
       z-index: 1
+
     .serial-furniture-box__icon
       img
         filter: brightness(0) invert(1)
+
       .img-default
         display: none
+
       .img-hover
         display: block
         filter: none
@@ -222,12 +245,13 @@
   z-index: 1
   width: calc(33.3% - 5px)
   cursor: pointer
+
   &:before
     content: ''
     position: absolute
     left: 50%
     top: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     width: calc(100% + 10px)
     height: calc(100% + 10px)
     z-index: -1
@@ -238,29 +262,36 @@
     position: relative
     z-index: 2
     padding: 20px 50px 50px
+
   h3
     font-size: 32px
     line-height: 100%
+
   .box-text
     margin: 20px 0
     font-size: 14px
     font-weight: 500
     line-height: 140%
+
   &__img
     position: relative
     z-index: 2
     margin: -80px 0 0
     height: 270px
     padding: 0 50px
+
     img
       max-height: 100%
+
   &:hover
     color: #fff
     z-index: 2
     box-shadow: 0px 30px 80px -20px rgba(0, 0, 0, 0.05)
+
     &:before
       z-index: 2
       opacity: 1
+
     .btn
       color: #fff
 
@@ -279,6 +310,7 @@
   align-items: center
   justify-content: center
   height: 268px
+
   img
     width: 100%
     height: 100%
@@ -287,30 +319,37 @@
 .useful-publications-box
   font-size: 14px
   line-height: 150%
+
   &__img
     width: 100%
     height: 218px
     display: flex
     align-items: center
     justify-content: center
+
     img
       width: 100%
       height: 100%
       object-fit: cover
+
   &__body
     width: 100%
     padding: 30px 80px 0 0
+
   &__title
     margin: 10px 0
     color: #272727
     font-size: 18px
     font-weight: 500
     line-height: 150%
+
     &:hover
       color: $accent
+
   &__category
     color: #8D8D91
     margin: 10px 0 0
+
     &:hover
       color: $accent
 
@@ -324,14 +363,17 @@
 /*==========  section about ==========*/
 .about
   background: #F6F6F6
+
   .description-company
     margin: 30px 0
     font-size: 18px
     font-weight: 500
     line-height: 150%
     max-width: 625px
+
   .box-text
     max-width: 625px
+
   .btn
     margin: 30px 0 0
 
@@ -343,10 +385,13 @@
   min-width: 885px
   margin-left: -15px
   height: 100%
+
   .slick-list, .slick-track
     height: 100%
+
   .video-box
     min-width: 885px
+
   .slick-dots
     bottom: 30px
 
@@ -355,6 +400,7 @@
   padding-bottom: 59%
   width: 100%
   height: 100%
+
   img
     width: 100%
     height: 100%
@@ -362,6 +408,7 @@
     position: absolute
     left: 0
     top: 0
+
   iframe
     width: 100%
     height: 100%
@@ -373,7 +420,7 @@
   position: absolute
   top: 50%
   left: 50%
-  transform: translate(-50%,-50%)
+  transform: translate(-50%, -50%)
   background: linear-gradient(0deg, #DE2C29, #DE2C29), #A81815
   width: 112px
   height: 112px
@@ -381,12 +428,13 @@
   display: flex
   align-items: center
   justify-content: center
+
   &:before
     content: ''
     position: absolute
     top: 50%
     left: 51%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     border:
       left: 12.5px solid #fff
       top: 12.5px solid transparent
@@ -399,6 +447,7 @@
 /*==========  section partners ==========*/
 .partners-slider
   min-width: 2000px
+
   .slick-slide
     margin: 0 50px 0 0
 
@@ -410,8 +459,10 @@
   filter: brightness(0) invert(1)
   height: 50px
   cursor: pointer
+
   img
     max-height: 100%
+
   &:hover
     filter: none
 
@@ -439,6 +490,7 @@
   font-size: 14px
   font-weight: 500
   background: linear-gradient(0deg, #919296, #919296), #939393
+
   &:before
     content: ''
     position: absolute
@@ -446,24 +498,29 @@
     height: calc(100% + 10px)
     left: 50%
     top: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     opacity: 0
     transition: .3s ease
     box-shadow: 0px 50px 80px -50px rgba(0, 0, 0, 0.3)
     background: linear-gradient(0deg, #DE2C29, #DE2C29), #A81815
     z-index: -1
+
   &__icon
     margin: 0 0 16px
     height: 96px
     display: flex
     align-items: center
+
     img
       max-height: 100%
+
   &:last-child
     border: none
+
   &:hover
     color: #fff
     z-index: 2
+
     &:before
       opacity: 1
 
@@ -479,7 +536,7 @@
   width: 80px
   height: 80px
   left: 50%
-  transform: translate(-50%,0)
+  transform: translate(-50%, 0)
   border-radius: 50%
   display: none
   align-items: center
@@ -489,6 +546,7 @@
   padding: 24px
   z-index: 2
   fill: none
+
   &__text
     display: none
 
@@ -501,24 +559,29 @@
   height: 100%
   display: flex
   flex-direction: column
+
   &:before
     content: ''
     position: absolute
     left: 50%
     top: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     width: calc(100% + 10px)
     height: calc(100% + 10px)
     background: #ffff
     opacity: 0
     z-index: -1
     transition: .3s ease
+
   &:hover
     box-shadow: 0 80px 80px -50px rgba(0, 0, 0, 0.1)
+
     &:before
       opacity: 1
+
     .btn-view
       display: flex
+
   .name-user
     font-size: 18px
     font-weight: 500
@@ -528,6 +591,7 @@
     width: 100%
     padding: 30px 30px 0
     position: relative
+
     &:before
       content: ''
       position: absolute
@@ -537,12 +601,13 @@
       height: 30px
       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%)
       z-index: 1
+
   &__head
     width: 100%
     display: flex
     align-items: center
     justify-content: space-between
-    flex-wrap: wrap
+
   &__photo
     display: flex
     align-items: center
@@ -555,15 +620,18 @@
     color: #FFFFFF
     font-size: 18px
     font-weight: 600
+
     img
       width: 100%
       height: 100%
       object-fit: cover
+
   &__body
     margin: 10px 0 0
     padding: 0 0 30px
     height: 105px
     overflow-y: auto
+
     .box-text
       line-height: 150%
 
@@ -572,6 +640,7 @@
   border-top: 1px solid #F6F6F6
   padding: 30px 30px 0
   margin: auto 0 0
+
   &:before
     content: ''
     position: absolute
@@ -581,16 +650,19 @@
     height: 30px
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%)
     z-index: 1
+
   &__head
     display: flex
     align-items: center
     margin: 0 0 20px
     width: 100%
+
     p
       margin: 0 20px 0 0
       color: $accent
       font-weight: 500
       font-size: 18px
+
   &__body
     width: 100%
     overflow-y: auto
@@ -598,3 +670,368 @@
     bottom: 30px
 
 /*==========  section reviews end  ==========*/
+
+
+
+/*==========  page catalog1  ==========*/
+.serial-furniture-page
+  .serial-furniture-box
+    background: #F6F6F6
+    border: none
+    margin: 0 0 10px
+    width: calc(16.67% - 10px)
+
+  .serial-furniture-wrapper
+    justify-content: space-between
+
+.advantages-v2
+  margin: 50px 0
+  padding: 50px 0
+
+.advantages-program-v2
+  padding: 100px 0
+
+.about-v2
+  border-bottom: 1px solid #E6E6E6
+
+.views-products
+  background: #F6F6F6
+  padding: 50px 0
+  h3
+    font-size: 32px
+    margin: 0 0 50px
+
+.views-products-slider
+  .slick-next
+    right: -20px
+
+  .slick-prev
+    left: -20px
+
+  .slick-arrow
+    top: 84px
+    transform: none
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1)
+
+  .slick-disabled
+    opacity: 0
+
+  .product-card
+    margin: 0
+    width: 100%
+
+    &__photo
+      height: 221px
+
+  .product-price
+    margin: 5px 0
+    font-size: 16px
+    font-weight: 500
+
+  .product-card__info
+    color: #8D8D91
+
+
+.catalog-page
+  margin: 50px 0 100px
+
+.catalog-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.sidebar
+  max-width: 260px
+  width: 100%
+  padding: 0 40px 0 0
+
+.sidebar-item
+  margin: 0 0 20px
+  border-bottom: 1px solid rgba(#BDBDBD, .3)
+
+  &__title
+    font-size: 14px
+    font-weight: 600
+    margin: 0 0 20px
+
+  &__body
+    padding: 0 0 20px
+    display: flex
+    flex-direction: column
+
+    .btn-clear
+      order: 1
+
+.btn-save
+  height: 41px
+  font-size: 16px
+  font-weight: 500
+
+.catalog-menu-name
+  margin: 0 0 20px
+  display: flex
+  align-items: center
+  color: $black
+  font-size: 14px
+  font-weight: 600
+
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 20px
+    height: 20px
+    margin: 0 10px 0 0
+    transform: rotate(180deg)
+    fill: none
+    stroke: $black
+
+  &:hover
+    color: $accent
+
+.catalog-menu
+  font-size: 14px
+
+  li
+    margin: 0 0 15px
+
+    &:last-child
+      margin: 0
+
+    a
+      color: $black
+      padding: 0 0 0 30px
+
+      &:hover
+        color: rgba(222, 44, 41, 1)
+
+.catalog-content
+  width: calc(100% - 260px)
+  padding: 0 0 0 10px
+
+.collapse-item
+  display: flex
+  align-items: center
+  cursor: pointer
+
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    margin: 0 10px 0 0
+    background: #E6E6E6
+    width: 20px
+    height: 20px
+    position: relative
+
+    &:before
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      border:
+        bottom: 4px solid #272727
+        left: 4px solid transparent
+        right: 4px solid transparent
+
+  &.collapsed
+    .collapse-item__icon
+      &:before
+        transform: translate(-50%, -50%) rotate(180deg)
+
+
+.range_val
+  width: 100%
+  position: relative
+  border: 1px solid #E6E6E6
+
+  .ui-widget.ui-widget-content
+    border: none
+      radius: 0
+    background: linear-gradient(0deg, #919296, #919296), #939393
+
+  .ui-slider-horizontal
+    height: 1px
+
+  .ui-slider .ui-slider-range
+    border-radius: 0
+    background: linear-gradient(0deg, #DE2C29, #DE2C29), #A81815
+
+  .ui-slider-horizontal .ui-slider-handle
+    background: linear-gradient(0deg, #DE2C29, #DE2C29), #A81815
+    width: 17px
+    height: 17px
+    border: none
+      radius: 50%
+    top: -7px
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus
+  box-shadow: none
+  border: none
+  outline: none
+
+.slider-range__wrap
+  position: absolute
+  bottom: -1px
+  background: #fff
+  left: 50%
+  transform: translate(-50%, 0)
+  width: calc(100% - 20px)
+  padding: 0 10px 0 13px
+
+.inp-group
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  input
+    width: calc(50% - 5px)
+    background: transparent
+    height: 57px
+    text-align: center
+    padding: 0
+    border: none
+    color: #272727
+    font-size: 14px
+    font-family: $default-font
+    font-weight: normal
+
+  .line
+    width: 10px
+    height: 1px
+    background: #272727
+
+.btn-collapse
+  display: flex
+  align-items: center
+  color: $black
+  margin: 5px 0 0
+  font-size: 14px
+
+  &__icon
+    stroke: $black
+    fill: none
+    width: 20px
+    height: 20px
+    min-width: 20px
+    margin: 0 10px 0 0
+
+  &:hover
+    color: $accent
+
+.catalog-category-list
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  margin: 0 -10px 10px
+  li
+    margin: 0 0 10px
+    padding: 0 5px
+    width: 25%
+  a
+    text-align: center
+    display: flex
+    flex-direction: column
+    width: 100%
+    height: 100%
+    border: 1px solid #E6E6E6
+    background: #fff
+    padding: 20px 10px
+    color: #272727
+    &:hover
+      color: $accent
+
+.catalog-category-box
+  &__icon
+    width: 100px
+    height: 100px
+    margin: 0 auto 20px
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      max-height: 100%
+
+.sorting-wrapper
+  margin: 0 0 20px
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.sorting-list
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  li
+    a
+      padding: 11.5px 20px
+      border-radius: 70px
+      font-size: 14px
+      line-height: 120%
+      color: $black
+      &:hover
+        color: $accent
+      &.active
+        background: #F6F6F6
+
+.sorting-line, .pages-wrapper
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 14px
+  p
+    margin: 0 20px 0 0
+
+.pages-navigation
+  display: flex
+  align-items: center
+
+.pages-wrapper
+  margin: 0 0 0 auto
+
+.pages-navigation-counter
+  padding: 11.5px 20px
+  display: flex
+  align-items: center
+  background: #F6F6F6
+  border-radius: 70px
+  font-size: 14px
+  line-height: 120%
+  margin: 0 20px
+  span
+    &:after
+      content: '/'
+      display: inline-block
+      margin: 0 10px
+    &:last-child
+      &:after
+        display: none
+
+.pages-navigation-arrow
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 24px
+  height: 24px
+  fill: none
+  stroke: $black
+
+.arrow-disabled
+  opacity: .1
+
+.products-row-catalog
+  .product-card
+    width: 25%
+    margin: 0 0 20px
+    .price
+      font-weight: normal
+
+
+
+
+/*==========  page catalog1 end  ==========*/
