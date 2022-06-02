@@ -196,7 +196,13 @@
     height: 50px; }
   .breadcrumbs {
     border: none;
-      border-top: 1px solid #E6E6E6; } }
+      border-top: 1px solid #E6E6E6; }
+  .pagination .page-item:nth-child(8), .pagination .page-item:nth-child(9), .pagination .page-item:nth-child(10) {
+    display: none; }
+  .menu-navigation__item {
+    width: 109px; }
+  .dropdown-menu-right {
+    left: 109px; } }
 
 @media only screen and (max-width: 1320px) {
   .menu li, .dropdown-contacts, .location-item {
@@ -244,12 +250,16 @@
         .menu-navigation__links.active .menu-navigation__links-icon {
           stroke: #272727; }
   .dropdown-menu-right {
-    width: 100%;
     background: #fff;
-    height: auto;
-    position: absolute;
+    position: fixed;
+    top: 0;
     left: 0;
-    top: 100%; }
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    z-index: 4;
+    height: 100%;
+    padding: 30px 0 0; }
   .btn-close-submenu {
     right: 20px;
     top: 20px;
@@ -350,7 +360,9 @@
   .phone-company {
     font-size: 22px; }
   .views-products-slider .product-card__photo {
-    height: 155px; } }
+    height: 155px; }
+  .btn-filter {
+    height: 40px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1024px) {
@@ -412,7 +424,67 @@
     .useful-publications-slider .slick-list {
       margin: 0 -5px; }
   .serial-furniture-box__icon {
-    margin: 0 auto 20px; } }
+    margin: 0 auto 20px; }
+  .catalog-content {
+    padding: 0;
+    width: 100%; }
+  .catalog-category-list a {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 12px;
+    padding: 15px 20px; }
+  .catalog-category-box__icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    margin: 0 20px 0 0; }
+  .sorting-line, .pages-wrapper {
+    font-size: 12px; }
+  .sorting-list li a {
+    font-size: 12px; }
+  .pages-navigation-counter {
+    font-size: 12px; }
+  .sidebar {
+    display: none;
+    padding: 50px 60px 0;
+    background: #fff;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    height: 100%;
+    max-width: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+  .sidebar-wrapper {
+    padding: 0 30px 50px;
+    overflow-y: auto;
+    height: 100%; }
+  .sidebar-item {
+    max-width: 220px;
+    width: 100%; }
+  .sidebar-title {
+    display: block; }
+  .sidebar-close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .sidebar-item-menu {
+    display: none; }
+  .btn-filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -479,7 +551,26 @@
     max-width: 120px; }
   .description-company {
     max-width: 76px;
-    font-size: 10px; } }
+    font-size: 10px; }
+  .sorting-line {
+    display: none; }
+  .btn-sorting {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40px;
+    font-size: 12px; }
+  .btn-filter {
+    margin: 0 10px 0 0;
+    font-size: 12px; }
+  .dropdown-submenu-sorting .dropdown-submenu__wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .dropdown-submenu-sorting .menu-navigation-submenu li {
+    padding: 6px 0; }
+    .dropdown-submenu-sorting .menu-navigation-submenu li a {
+      min-height: 68px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 900px) {
@@ -713,7 +804,13 @@
     border-left-width: 4px;
     border-bottom-width: 4px;
     border-top-width: 4px;
-    margin-left: 12px; } }
+    margin-left: 12px; }
+  .catalog-category-list li {
+    width: 33.3%; }
+  .pagination .page-item:nth-child(5), .pagination .page-item:nth-child(6), .pagination .page-item:nth-child(7) {
+    display: none; }
+  .btn-group-list-catalog {
+    padding: 0; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 740px) {
@@ -792,7 +889,10 @@
   .answer-box__head {
     padding: 0 20px 0; }
   .answer-box__body {
-    padding: 0 20px 30px; } }
+    padding: 0 20px 30px; }
+  .products-row-catalog .product-card {
+    width: 33.3%;
+    margin: 0 0 30px; } }
 
 @media only screen and (max-width: 575px) {
   .reviews-card__photo {
@@ -1084,7 +1184,9 @@
   .dropdown-menu-right {
     top: auto;
     bottom: 0;
-    padding: 0 0 71px; }
+    padding: 0 0 71px;
+    width: 100%;
+    height: auto; }
   .btn-callback {
     width: 100%;
     height: 43px;
@@ -1097,7 +1199,8 @@
     width: 36px;
     height: 36px;
     fill: #fff;
-    padding: 10px; }
+    padding: 10px;
+    left: auto; }
   .dropdown-submenu__title {
     width: 100%;
     max-width: none;
@@ -1215,7 +1318,98 @@
   .views-products h3 {
     margin: 0 0 30px; }
   .views-products-slider .product-card__photo {
-    height: 150px; } }
+    height: 150px; }
+  .catalog-category-list {
+    margin: 0 0 30px; }
+    .catalog-category-list li {
+      width: 50%;
+      margin: -0.5px;
+      padding: 0; }
+      .catalog-category-list li a {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center;
+        padding: 15px; }
+      .catalog-category-list li .catalog-category-box__icon {
+        margin: 0 auto 10px; }
+  .pages-wrapper {
+    display: none; }
+  .btn-group-list-catalog {
+    padding: 0; }
+  .dropdown-submenu-sorting .menu-navigation-submenu li {
+    padding: 0; }
+    .dropdown-submenu-sorting .menu-navigation-submenu li a {
+      min-height: auto; }
+  .sidebar {
+    padding: 30px 26px 90px;
+    height: calc(100% - 83px);
+    top: auto;
+    bottom: 0;
+    width: 100%; }
+    .sidebar:before {
+      content: '';
+      position: absolute;
+      bottom: 70px;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      -webkit-box-shadow: inset 0px -77px 40px -66px rgba(0, 0, 0, 0.15);
+              box-shadow: inset 0px -77px 40px -66px rgba(0, 0, 0, 0.15); }
+  .sidebar-title {
+    margin: 0 0 30px; }
+  .sidebar-close {
+    position: absolute;
+    top: 30px;
+    right: 26px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#DE2C29), to(#DE2C29)), #A81815;
+    background: linear-gradient(0deg, #DE2C29, #DE2C29), #A81815;
+    fill: #fff;
+    padding: 10px;
+    width: 36px;
+    height: 36px;
+    z-index: 2; }
+  .sidebar-wrapper {
+    padding: 0 0 20px; }
+  .sidebar-item {
+    max-width: none; }
+  .products-row-catalog .product-card {
+    width: 50%; }
+  .btn-filter, .btn-sorting {
+    width: calc(50% - 5px);
+    margin: 0; }
+  .btn-filter {
+    margin: 0 auto 0 0; }
+  .btn-group-list-catalog {
+    border: none;
+      border-top: 1px solid #E6E6E6; }
+    .btn-group-list-catalog li {
+      width: 100%;
+      -webkit-box-flex: 0;
+          -ms-flex: none;
+              flex: none;
+      display: none;
+      border: none; }
+      .btn-group-list-catalog li:nth-child(2) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+      .btn-group-list-catalog li a {
+        padding: 15px; }
+  .pagination-pages {
+    margin: 30px 0 0; }
+  .pagination {
+    font-size: 12px; }
+  .pagination-nav {
+    margin: 0 auto; }
+  .view-pages {
+    display: none; }
+  .catalog-page {
+    margin: 50px 0; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {
@@ -1232,4 +1426,6 @@
   .company-experience__logo {
     max-width: 62px; }
   .btn-column {
-    padding: 0 15px; } }
+    padding: 0 15px; }
+  .pagination .page-item {
+    margin: 0 10px 0 0; } }

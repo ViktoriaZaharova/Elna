@@ -746,6 +746,27 @@
   width: 100%
   padding: 0 40px 0 0
 
+.sidebar-title
+  display: none
+  margin: 0 0 40px
+  font-size: 32px
+  font-weight: normal
+
+.sidebar-close
+  position: absolute
+  right: -94px
+  top: 30px
+  width: 64px
+  height: 64px
+  border-radius: 50%
+  padding: 20px
+  display: none
+  background: #fff
+  align-items: center
+  justify-content: center
+  stroke: none
+  fill: $black
+
 .sidebar-item
   margin: 0 0 20px
   border-bottom: 1px solid rgba(#BDBDBD, .3)
@@ -957,7 +978,7 @@
       max-height: 100%
 
 .sorting-wrapper
-  margin: 0 0 20px
+  margin: 0 0 30px
   width: 100%
   display: flex
   align-items: center
@@ -969,10 +990,14 @@
   flex-wrap: wrap
   li
     a
-      padding: 11.5px 20px
+      padding: 10px 20px
       border-radius: 70px
       font-size: 14px
       line-height: 120%
+      height: 40px
+      display: flex
+      align-items: center
+      justify-content: center
       color: $black
       &:hover
         color: $accent
@@ -995,7 +1020,7 @@
   margin: 0 0 0 auto
 
 .pages-navigation-counter
-  padding: 11.5px 20px
+  padding: 5px 20px
   display: flex
   align-items: center
   background: #F6F6F6
@@ -1003,6 +1028,7 @@
   font-size: 14px
   line-height: 120%
   margin: 0 20px
+  height: 40px
   span
     &:after
       content: '/'
@@ -1031,7 +1057,30 @@
     .price
       font-weight: normal
 
+.btn-filter
+  color: #fff
+  background: #272727
+  padding: 7px 20px
+  border-radius: 70px
+  height: 40px
+  margin: 0 35px 0 0
+  display: none
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 16px
+    height: 16px
+    min-width: 16px
+    margin: 0 5px 0 0
+  &:hover
+    background: $accent
+    color: inherit
 
-
+.btn-sorting
+  display: none
+  height: 40px
+  border-radius: 70px
+  padding: 10px 20px
 
 /*==========  page catalog1 end  ==========*/
